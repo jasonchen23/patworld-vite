@@ -1,5 +1,5 @@
 import { createRouter, createWebHashHistory } from "vue-router";
-import NavComponent from "./components/NavComponent.vue"
+// import NavbarBox from "@/components/NavbarBox.vue"
 const routes = [
     {
         path: "/", component: () => import("./views/HomePage.vue"),
@@ -8,8 +8,9 @@ const routes = [
         path: "/vip", component: () => import("./views/VipPage.vue"),
     },
     {
-        path: "/shop", component: () => import("./views/ShopPage.vue"),children : [
-            {path : '/shop', name : 'Navbar', component : NavComponent},]
+        path: "/shop", component: () => import("./views/ShopPage.vue"),
+        // children : [
+        //     {path : '/shop', name : 'Navbar', component : NavbarBox},]
     },
     {
         path: "/donate", component: () => import("./views/DonatePage.vue"),

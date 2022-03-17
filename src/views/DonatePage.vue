@@ -1,11 +1,12 @@
 <template>
-  
+    <Navbar />
 </template>
 
-<script>
-export default {
+<script setup>
+import Navbar from '@/components/NavbarBox.vue';
+// export default {
 
-}
+// }
 </script>
 
 <style>
