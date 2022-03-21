@@ -1,7 +1,9 @@
 <template>
     <Navbar />
-
-    <Product v-for="product in products" />
+    <!-- <Product v-for="product in products" /> -->
+    <div class="container">
+        
+    </div>
 </template>
 
 <script>

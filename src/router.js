@@ -8,7 +8,7 @@ const routes = [
         path: "/vip", component: () => import("./views/VipPage.vue"),
     },
     {
-        path: "/shop", component: () => import("./views/ShopPage.vue"),
+        path: "/Adopt", component: () => import("./views/AdoptPage.vue"),
         // children : [
         //     {path : '/shop', name : 'Navbar', component : NavbarBox},]
     },
