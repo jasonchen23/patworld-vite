@@ -6,7 +6,8 @@
       <router-link to="/vip">VIP</router-link> || 
       <router-link to="/shop">ADOPT</router-link> || 
       <router-link to="/donate">DONATE</router-link> || 
-      <router-link to="/member">MEMBER</router-link> || 
+      <router-link to="/member">MEMBER</router-link>
+      <slot></slot>
   </div>
 </template>
 
