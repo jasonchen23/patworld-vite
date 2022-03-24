@@ -4,7 +4,7 @@
       <h1>Pat World</h1>
       <router-link to="/">Home</router-link> ||
       <router-link to="/vip">VIP</router-link> || 
-      <router-link to="/shop">ADOPT</router-link> || 
+      <router-link to="/adopt">ADOPT</router-link> || 
       <router-link to="/donate">DONATE</router-link> || 
       <router-link to="/member">MEMBER</router-link> || 
   </div>
@@ -17,5 +17,3 @@ export default {
 </script>
 
 <style>
-
-</style>
