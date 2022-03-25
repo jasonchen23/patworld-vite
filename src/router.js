@@ -2,7 +2,7 @@ import { createRouter, createWebHashHistory } from "vue-router";
 // import NavbarBox from "@/components/NavbarBox.vue"
 const routes = [
     {
-        path: "/", component: () => import("./views/HomePage.vue"),
+        path: "/", component: () => import("./views/HomePage/HomePage.vue"),
     },
     {
         path: "/vip", component: () => import("./views/VipPage.vue"),
