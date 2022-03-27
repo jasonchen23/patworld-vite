@@ -11,19 +11,19 @@
     </div>
 </template>
 <script>
-import { firebaseAuth } from '@/config/firebaseConfig.js';
+import { databaseAuth } from '@/config/databaseConfig.js';
 
 export default {
     data() {
       return{
         user: {
-          email: ''
+          email: '',
             }
         };
     },
     methods: {
         forgetPassword() {
-            firebaseAuth.sendPasswordResetEmail(this.user.email)
+            databaseAuth.sendPasswordResetEmail(this.user.email)
             .then(() => {
                 alert('請查看您的信箱以重設密碼')
                 this.user = {

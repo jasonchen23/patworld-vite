@@ -4,10 +4,10 @@
             <h3>登入</h3>
 
             <div class="form-group">
-                <label>郵件地址</label>
-                <input type="email"
+                <label>帳號</label>
+                <input type="text"
                 class="form-control form-control-lg"
-                v-model="user.email"
+                v-model="user.account"
                 />
             </div>
             <div class="form-group">
@@ -31,12 +31,13 @@
 </template>
 
 <script>
-import { firebaseAuth } from '@/config/firebaseConfig.js';
+import { databaseAuth } from '@/config/databaseConfig.js';
 
 export default {
     data() {
         return{
             user:{
+                account:"",
                 email:"",
                 password:"",
             },
@@ -44,7 +45,7 @@ export default {
     },
     methods: {
         userLogin() {
-            firebaseAuth.signInWithEmailAndPassword(this.user.email, this.user.password).then(() => {
+            databaseAuth.signInWithEmailAndPassword(this.user.email, this.user.password).then(() => {
                 this.$router.push("/admin");
             })
             .catch((error) => {

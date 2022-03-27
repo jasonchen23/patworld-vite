@@ -12,7 +12,7 @@
     </div>
 </template>
 <script>
-import { firebaseAuth } from "@/config/firebaseConfig.js";
+import { databaseAuth } from "@/config/databaseConfig.js";
 
 export default {
     data() {
@@ -21,7 +21,7 @@ export default {
         };
     },
     created() {
-        firebaseAuth.onAuthStateChanged((user) => {
+        databaseAuth.onAuthStateChanged((user) => {
             if (user) {
                 this.user = user;
             } else {
@@ -31,8 +31,8 @@ export default {
     },
     methods: {
         logOut() {
-            firebaseAuth.signOut().then(() => {
-                firebaseAuth.onAuthStateChanged(() => {
+            databaseAuth.signOut().then(() => {
+                databaseAuth.onAuthStateChanged(() => {
                     this.$router.push('/login')
                 })
             })

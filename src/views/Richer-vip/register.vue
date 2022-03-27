@@ -27,33 +27,17 @@
         </form>
     </div>
 </template>
+
 <script>
-import { databaseAuth } from '@/config/databaseConfig.js';
+import register from '@/components/register.vue';
 
 export default {
-    data() {
-        return {
-            user: {
-                account: "",
-                email: "",
-                password: "",
-            },
-        };
+    components: {
+        register,
     },
-    methods: {
-        userRegistration() {
-        databaseAuth.createUserWithEmailAndPassword(this.user.email, this.user.password).then((res) => {
-            res.user.updateProfile({
-            displayname: this.user.name,    
-            })
-            .then(() =>{
-                this.$router.push("/login");
-            });
-        })
-        .catch((error) => {
-            alert(error.message);
-        });    
-        },
-    },
-};
+
+
+
+}
+
 </script>

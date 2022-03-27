@@ -19,25 +19,20 @@ const routes = [
         path: "/member", component: () => import("./views/MemberPage.vue"),
     },
     {
-        path: "/logout",
-        component: Logout,
-      },
-      {
-        path: "/forgot-password",
-        component: ForgotPassword,
-      },
-      {
-        path: "/login",
-        component: Login,
-      },
-      {
-        path: "/register",
-        component: Register,
-      },
-      {
-        path: "/admin",
-        component: AdminPanel,
-      }
+      path: "/forgotPassword", component: () => import("./views/Richer-vip/forgotPassword.vue"),
+    },
+    {
+      path: "/login", component: () => import("./views/Richer-vip/login.vue"),
+    },
+    {
+        path: "/logout", component: () => import("./views/Richer-vip/logout.vue"),
+    },
+    {
+      path: "/register", component: () => import("./views/Richer-vip/register.vue"),
+    },
+    {
+      path: "/registers", component: () => import("./views/Richer-vip/registers.vue"),
+    },
 ]
 export default createRouter({
     history: createWebHashHistory(),
