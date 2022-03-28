@@ -34,9 +34,6 @@
                     <div class="carousel-item">
                         <img src="./vuesImages/幻燈片dog.jpeg" class="d-block w-100" alt="..." />
                     </div>
-                    <!-- <div class="carousel-item">
-                為什麼會有Pet World 呢 ？的ui圖
-                    </div>-->
                 </div>
                 <button
                     class="carousel-control-prev"
@@ -81,8 +78,10 @@
                         <div class="select">
                             <select>
                                 <option value="1">不限區域</option>
-                                <option value="2">No JS</option>
-                                <option value="3">Nice!</option>
+                                <option value="2">北部</option>
+                                <option value="3">中部</option>
+                                <option value="4">南部</option>
+                                <option value="5">東部</option>
                             </select>
                         </div>
                         <div class="select">
@@ -162,11 +161,13 @@
                         <div class="text col-3">新北市</div>
                     </div>
                     <br />
-                    <router-link
+                    <div class="button">
+                        <router-link
                         to="/detail"
                         style="text-decoration:none;"
                         class="btn btn-light"
                     >詳細資料</router-link>
+                    </div>
                 </div>
             </div>
         </div>
@@ -274,8 +275,8 @@ select::-ms-expand {
     cursor: pointer;
     display: inline-flex;
     font-family: "JetBrains Mono", monospace;
-    height: 6vh;
-    width: 9vw;
+    height: 50px;
+    width: 90px;
     justify-content: center;
     line-height: 1;
     list-style: none;
@@ -345,5 +346,9 @@ select::-ms-expand {
 .textBox {
     margin-right: 6%;
 }
-
+.button{
+    display: flex;
+    justify-content: center;
+    margin-left: 135px;
+}
 </style>
