@@ -138,28 +138,28 @@
                     </div>
                 </div>
             </div>-->
-            <div class="card text-white bg-success" style="width: 18rem;">
-                <img src="./vuesImages/jason.svg" class="card-img-top" alt="..." />
+            <div class="card text-white bg-success" style="width: 25rem;">
+                <img src="https://asms.coa.gov.tw/amlapp/upload/pic/b52f8716-c482-40ff-826b-926312e92d63_org.jpg" class="card-img-top" alt="..." />
                 <div class="card-body">
                     <h5 class="card-title">傑森</h5>
                     <br>
                     <div class="card-text row textBox">
-                        <div class="img col-6">
+                        <div class="img col-3">
                             <img src="./vuesImages/id.svg" alt />
                         </div>
-                        <div class="text col-6">狗狗</div>
-                        <div class="img col-6">
+                        <div class="text col-3">狗狗</div>
+                        <div class="img col-3">
                             <img src="./vuesImages/gender.svg">
                         </div>
-                        <div class="text col-6">男生</div>
-                        <div class="img col-6">
+                        <div class="text col-3">男生</div>
+                        <div class="img col-3">
                             <img src="./vuesImages/狗掌.svg" alt />
                         </div>
-                        <div class="text col-6">拉布拉多</div>
-                        <div class="img col-6">
+                        <div class="text col-3">拉布拉多</div>
+                        <div class="img col-3">
                             <img src="./vuesImages/home.svg" alt />
                         </div>
-                        <div class="text col-6">新北市</div>
+                        <div class="text col-3">新北市</div>
                     </div>
                     <br />
                     <router-link
@@ -324,10 +324,6 @@ select::-ms-expand {
     height: 40vh;
     margin-left: -20vw;
 }
-.infoLogo {
-    /* width: 30vw;
-    height:vh; */
-}
 .infoLogo img {
     width: 10vw;
     height: 10vh;
@@ -349,4 +345,5 @@ select::-ms-expand {
 .textBox {
     margin-right: 6%;
 }
+
 </style>

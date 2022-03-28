@@ -64,6 +64,7 @@ export default {
 }
 .animalInfo {
   text-align: left;
+  margin-top: 1%;
 }
 .animalImg {
   max-width: 100%;
@@ -73,6 +74,8 @@ export default {
   object-fit: contain;
   max-width: 100%;
   max-height: 90%;
+  box-shadow: rgba(5, 5, 5, 5) 0px 4px 12px;
+  border-radius: 10px 10px 10px 10px / 10px 10px 10px 10px;
 }
 li {
   font-size: 2vw;
