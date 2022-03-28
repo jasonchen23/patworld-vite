@@ -19,6 +19,9 @@
   margin-top: 60px;
 }
 body {
-  margin:0;
+  margin: 0;
+  padding: 0;
+  /* background: #fffaf4; */
 }
+
 </style>

@@ -35,5 +35,15 @@ export default defineConfig({
       //   }
       // }
       }
-    }
+    },
+  //   configureWebpack: {
+  //     //支持jquery
+  //     plugins: [
+  //         new webpack.ProvidePlugin({
+  //             $:"jquery",
+  //             jQuery:"jquery",
+  //             "windows.jQuery":"jquery"
+  //         })
+  //     ]
+  // },
 })

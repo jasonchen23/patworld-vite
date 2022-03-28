@@ -8,9 +8,12 @@ const routes = [
         path: "/vip", component: () => import("./views/VipPage.vue"),
     },
     {
-        path: "/Adopt", component: () => import("./views/AdoptPage.vue"),
+        path: "/adopt", component: () => import("./views/AdoptPage.vue"),
         // children : [
         //     {path : '/shop', name : 'Navbar', component : NavbarBox},]
+    },
+    {
+        path: "/stray", component: () => import("./views/StrayAnimal.vue")
     },
     {
         path: "/donate", component: () => import("./views/DonatePage.vue"),
@@ -18,6 +21,20 @@ const routes = [
     {
         path: "/member", component: () => import("./views/MemberPage.vue"),
     },
+    {
+        path: "/detail", component: () => import("./views/AnimalDetail.vue") ,
+    },
+    {
+        path: "/notice", component: () => import("./views/AdoptionNotice.vue")
+    },
+    {
+        path: "/fillin", component: () => import("./views/AdopterFillin.vue")
+    },
+    {
+        path: "/sent", component: () => import("./views/DataSent.vue")
+    },
+    
+    
 ]
 export default createRouter({
     history: createWebHashHistory(),

@@ -21,7 +21,7 @@
                </div>
            </div>
        </div>
-       <div class="footer">
+       <div class="footer d-flex align-items-end">
            <div class="footerImg1">
                <img src="./vuesImages/帶我回家.svg" alt="" class="footerImg">
            </div>
@@ -32,7 +32,9 @@
                <img src="./vuesImages/一起找個家.svg" alt="" class="footerImg">
            </div>
            <div class="button">
-            <input type="button" value="進入" class="enterButton">
+            <router-link to="/stray" style="text-decoration:none;">
+                <input type="button" value="進入" class="enterButton">
+            </router-link>
            </div>
        </div>
     </div>
@@ -58,8 +60,9 @@ src: url("@/vuesImages/Cubic_11.woff") format("woff");
 
 .body {
     font-family: 'Cubic_11' ;
-    background: linear-gradient(0deg, #FFFAF4 12%, #f5bb73fd 85%);
+    /* background: linear-gradient(0deg, #FFFAF4 12%, #f5bb73fd 85%); */
     height: 100%;
+    margin-top: -8vh;
 }
 .logoBox {
     background-color: #fff6ee;
@@ -70,7 +73,7 @@ src: url("@/vuesImages/Cubic_11.woff") format("woff");
     padding: 0.25rem 0;
     display: flex;
     justify-content: center;
-    margin-top: -5%;
+    /* margin-top: -5%; */
     /* padding-top: -100px; */
   }
 .logo{
@@ -185,8 +188,9 @@ src: url("@/vuesImages/Cubic_11.woff") format("woff");
   will-change: box-shadow,transform;
   font-size: 18px;
   position: relative ;
-  top: 43vh;
+  /* top: 43vh; */
   right: 50vw;
+  margin-top: 1px;
 }
 
 .enterButton:focus {
