@@ -138,7 +138,7 @@
                     </div>
                 </div>
             </div>-->
-            <div class="card" style="width: 18rem;">
+            <div class="card text-white bg-success" style="width: 18rem;">
                 <img src="./vuesImages/jason.svg" class="card-img-top" alt="..." />
                 <div class="card-body">
                     <h5 class="card-title">傑森</h5>
@@ -165,7 +165,7 @@
                     <router-link
                         to="/detail"
                         style="text-decoration:none;"
-                        class="btn btn-primary"
+                        class="btn btn-light"
                     >詳細資料</router-link>
                 </div>
             </div>
