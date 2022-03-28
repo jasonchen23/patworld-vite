@@ -1,26 +1,15 @@
 <template>
-
-<div class="container">
-    <div class="row">
-        <div class="d-flex card">
-            <img src="https://4.bp.blogspot.com/-Hbl_buIRu5o/XG4GXOwvXLI/AAAAAAABRq0/hEWfV0FE5IEG66wOidqBlI5IA0e28QFGgCLcBGAs/s400/ahiruguchi_man.png" alt="">
-            <h3>{{memberlist}}</h3>
+      <div class="container pt-5">
+        <div class="row">
+          <div class="developer animate__animated animate__fadeInUp">
+            <div class="card mx-2">
+                <img src="https://th.bing.com/th/id/OIP.d_VB81EP_EoX_lisrAT_JQHaHa?pid=ImgDet&rs=1" alt="" style="width:100%">
+                <div class="container">
+                  <h2>{{memberlist.name}}</h2>
+                  <h5>{{memberlist.detail}}</h5>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
-
+      </div>
+  </div>
 </template>
-
-<script>
-
-//export default {
-
-// }
-</script>
-
-<style>
-
-</style>
-
-
-  
