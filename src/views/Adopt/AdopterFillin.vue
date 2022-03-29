@@ -28,6 +28,7 @@
             <img src="./vuesImages/tree.svg" alt />
         </div>
     </div>
+    <router-view/>
 </template>
 
 <script>

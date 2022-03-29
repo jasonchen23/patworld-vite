@@ -32,12 +32,13 @@
                <img src="./vuesImages/一起找個家.svg" alt="" class="footerImg">
            </div>
            <div class="button">
-            <router-link to="/stray" style="text-decoration:none;">
+            <router-link to="/adopt/stray" style="text-decoration:none;">
                 <input type="button" value="進入" class="enterButton">
             </router-link>
            </div>
        </div>
     </div>
+    
 </template>
 
 
@@ -49,20 +50,26 @@ export default {
         Navbar,
         Product
     },
+    data(){
+        return{
+
+        }
+    }
 }
 </script>
 
 <style scoped>
 @font-face {
 font-family: Cubic_11;
-src: url("@/vuesImages/Cubic_11.woff") format("woff");
+src: url("@/views/Adopt/vuesImages/Cubic_11.woff") format("woff");
 }
 
 .body {
     font-family: 'Cubic_11' ;
     /* background: linear-gradient(0deg, #FFFAF4 12%, #f5bb73fd 85%); */
-    height: 100%;
-    margin-top: -8vh;
+    height: 100vh;
+    width: 100%;
+    margin-top: -0.5vh;
 }
 .logoBox {
     background-color: #fff6ee;

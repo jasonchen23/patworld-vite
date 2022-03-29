@@ -186,7 +186,7 @@ export default {
 <style scoped>
 @font-face {
     font-family: Cubic_11;
-    src: url("@/vuesImages/Cubic_11.woff") format("woff");
+    src: url("@/views/Adopt/vuesImages/Cubic_11.woff") format("woff");
 }
 
 .body {

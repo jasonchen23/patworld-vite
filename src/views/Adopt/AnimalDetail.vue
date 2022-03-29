@@ -53,9 +53,9 @@ export default {
 
 .body {
   /* font-family: "Cubic_11"; */
-  height: 100%;
+  /* height: 100%; */
   /* background: #ebc79c; */
-  margin-top: -8vh;
+  margin-top: -0.5vh;
 }
 .detail {
   display: flex;

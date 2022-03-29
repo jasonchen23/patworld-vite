@@ -20,7 +20,7 @@ export default {
         padding:30px;
         text-align: center;
         background: beige;
-        margin-top: -5%;
+        /* margin-top: -5%; */
     }
     #nav a{
         font-weight: bold;

@@ -1,4 +1,5 @@
 import { createRouter, createWebHashHistory } from "vue-router";
+import Stary from "./views/Adopt/StrayAnimal.vue";
 // import NavbarBox from "@/components/NavbarBox.vue"
 const routes = [
     {
@@ -8,12 +9,12 @@ const routes = [
         path: "/vip", component: () => import("./views/VipPage.vue"),
     },
     {
-        path: "/adopt", component: () => import("./views/AdoptPage.vue"),
+        path: "/adopt", component: () => import("./views/Adopt/AdoptPage.vue"),
         // children : [
-        //     {path : '/shop', name : 'Navbar', component : NavbarBox},]
+        //     {path : 'stray', name : 'Stray',component: Stary},]
     },
     {
-        path: "/stray", component: () => import("./views/StrayAnimal.vue")
+        path: "/adopt/stray", component: () => import("./views/Adopt/StrayAnimal.vue")
     },
     {
         path: "/donate", component: () => import("./views/DonatePage.vue"),
@@ -22,16 +23,16 @@ const routes = [
         path: "/member", component: () => import("./views/MemberPage.vue"),
     },
     {
-        path: "/detail", component: () => import("./views/AnimalDetail.vue") ,
+        path: "/detail", component: () => import("./views/Adopt/AnimalDetail.vue") ,
     },
     {
-        path: "/notice", component: () => import("./views/AdoptionNotice.vue")
+        path: "/notice", component: () => import("./views/Adopt/AdoptionNotice.vue")
     },
     {
-        path: "/fillin", component: () => import("./views/AdopterFillin.vue")
+        path: "/fillin", component: () => import("./views/Adopt/AdopterFillin.vue")
     },
     {
-        path: "/sent", component: () => import("./views/DataSent.vue")
+        path: "/sent", component: () => import("./views/Adopt/DataSent.vue")
     },
     
     
