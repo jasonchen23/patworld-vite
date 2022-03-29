@@ -15,6 +15,7 @@ const routes = [
     {
         path: "/donate", component: () => import("./views/DonatePage.vue"),
         children : [
+            {path : '', component: () => import("./views/DonatePage.vue")},
             {path : '/donate/list', component: () => import("./views/Donate2_list.vue")},
             {path : '/donate/check', component: () => import("./views/Donate3_check.vue")},
             {path : '/donate/pay', component: () => import("./views/Donate4_pay.vue")},

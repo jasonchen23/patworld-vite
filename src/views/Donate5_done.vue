@@ -8,6 +8,7 @@
                         <img src="img\animal_mizugi_set_bg.png" width="300" height="300" class="img-fluid mb-3">
                         <h3><strong>感謝您的捐贈!</strong></h3>
                         <a href="#" class="button-30" mt-3 role="button">回到首頁</a>
+                        <Button v-bind="link"/>{{}}
                   </div>
               </div>
           </div>
@@ -17,12 +18,20 @@
 
 <script>
 import Navbar from '@/components/NavbarBox.vue'
+import Button from '../components/button.vue'
 
 export default {
     components: {
-        Navbar,
+        Navbar
+        Button,
    
     },
+    data(){
+        return{
+            link:
+        }
+
+    }
 }
 </script>
 
