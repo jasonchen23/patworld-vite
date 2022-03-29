@@ -19,7 +19,14 @@
   /* margin-top: 60px; */
 }
 body {
+<<<<<<< HEAD
   margin:0;
   padding: 0
+=======
+  margin: 0;
+  padding: 0;
+  /* background: #fffaf4; */
+>>>>>>> 78f14a3e957954e39c445a253e90d40605d4f4cd
 }
+
 </style>
