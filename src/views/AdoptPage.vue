@@ -22,10 +22,10 @@
            </div>
        </div>
        <div class="footer d-flex align-items-end">
-           <div class="footerImg1">
+           <div class="footerImg1 hor">
                <img src="./vuesImages/帶我回家.svg" alt="" class="footerImg">
            </div>
-           <div class="footerImg2">
+           <div class="footerImg2" id="hid">
                <router-link
                         to="/stray"
                         style="text-decoration:none;"
@@ -49,6 +49,14 @@ export default {
         Navbar,
         Product
     },
+    // mounted(){
+    //     $("#hid").hide();
+    //     $(".hor").mouseenter(
+    //         function display(){
+    //             $("#hid").fadeIn("slow");
+    //         }
+    //     )
+    // },
 }
 </script>
 

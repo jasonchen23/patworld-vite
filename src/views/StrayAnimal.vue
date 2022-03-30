@@ -193,7 +193,7 @@ export default {
 .body {
     /* font-family: "Cubic_11"; */
     height: 100%;
-    margin-top: -8vh;
+    margin-top: 0;
     /* background: #fffaf4; */
 }
 .slideshow {
@@ -238,7 +238,9 @@ select::-ms-expand {
     height: 3em;
     border-radius: 0.25em;
     overflow: hidden;
-    margin-right: 1%;
+    margin-right: 2%;
+    /* padding: 3px; */
+    /* margin: 30px; */
 }
 /* Arrow */
 .select::after {
@@ -293,7 +295,8 @@ select::-ms-expand {
     white-space: nowrap;
     will-change: box-shadow, transform;
     font-size: 18px;
-    margin-top: 0%;
+    /* margin-left: -100px;
+    margin-right: 20vw; */
 }
 
 .button:focus {
