@@ -33,8 +33,9 @@
            </div>
            <div class="button">
             <router-link to="/adopt/stray" style="text-decoration:none;">
-                <input type="button" value="進入" class="enterButton">
+                <input type="button" value="進入" @click=check class="enterButton">
             </router-link>
+            router-view
            </div>
        </div>
     </div>
@@ -54,6 +55,13 @@ export default {
         return{
 
         }
+    },
+    methods:{
+        // check(this){
+        //     if(account==null){
+        //         alert("Insert account!!");
+        //     }
+        // }
     }
 }
 </script>

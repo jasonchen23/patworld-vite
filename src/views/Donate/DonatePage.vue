@@ -1,6 +1,6 @@
 <template>
     <Navbar />
-    <Donate />
+    <!-- <Donate /> -->
     <div class="container">
       <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -41,7 +41,7 @@
 
 <script>
 import Navbar from '@/components/NavbarBox.vue'
-import Donate from '@/components/DonateBox.vue'
+// import Donate from '@/components/DonateBox.vue'
 
 
 </script>

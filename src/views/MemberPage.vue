@@ -1,7 +1,15 @@
 <template>
     <Navbar />
-    <MemberCard />
-     
+    <div class="container pt-5">
+      <div class="row">
+                  <div class="developer animate__animated animate__fadeInUp">
+        <template v-for="member in members" :key="member">
+          <MemberCard v-bind="member" />
+        </template>
+        </div>
+      </div>
+    </div>
+    
 </template>
 
 
@@ -18,7 +26,7 @@ export default {
   },
   data() {
     return {
-      memberlist: [
+      members: [
                 {
                     name: 'Jason',
                     detail: '首頁、後端'

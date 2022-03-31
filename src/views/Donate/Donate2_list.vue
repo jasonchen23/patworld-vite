@@ -3,8 +3,8 @@ import Navbar from '@/components/NavbarBox.vue'
 import Donate from '@/components/DonateBox.vue'
 
 export default {
-    components;{
-        DonateBox
+    components:{
+        Donate
     },
     data() {
         return{
@@ -30,15 +30,15 @@ export default {
                     price: '400'
                 },
             ]
-        },
-    }
-    mounted()
-            
-        },
-    methods:{
-        addCart: function(product){
-            
         }
-    }
+    }}
+    // mounted()
+            
+    //     },
+    // methods:{
+    //     addCart: function(product){
+            
+    //     }
+    // }
 
 </script>
