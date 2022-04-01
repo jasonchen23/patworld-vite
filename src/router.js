@@ -18,6 +18,9 @@ const routes = [
         path: "/donate", component: () => import("./views/Donate/DonatePage.vue"),
     },
     {
+        path: "/donate2", component: () => import("./views/Donate/Donate2_list.vue"),
+    },
+    {
         path: "/member", component: () => import("./views/MemberPage.vue"),
     },
     {

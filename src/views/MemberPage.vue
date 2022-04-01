@@ -2,9 +2,9 @@
 <Navbar />
 <div class="container pt-5">
     <div class="row">
-        <div class="developer animate__animated animate__fadeInUp">
+        <div class="developer">
             <template v-for="member in members" :key="member">
-                <MemberCard v-bind="member" />
+                <Member v-bind="member" />
             </template>
         </div>
     </div>
@@ -13,12 +13,12 @@
 
 <script>
 import Navbar from "@/components/NavbarBox.vue";
-import MemberCard from "@/components/MemberCard.vue";
+import Member from "@/components/MemberBox.vue";
 
 export default {
     components: {
-        MemberCard,
         Navbar,
+        Member,
     },
     data() {
         return {
@@ -37,6 +37,10 @@ export default {
                 {
                     name: 'Andy',
                     detail: '動物領養頁面'
+                },
+                 {
+                    name: 'Amy',
+                    detail: '頁面'
                 },
             ]
         }
