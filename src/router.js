@@ -2,37 +2,29 @@ import { createRouter, createWebHashHistory } from "vue-router";
 // import NavbarBox from "@/components/NavbarBox.vue"
 const routes = [
     {
-        path: "/", component: () => import("./views/HomePage.vue"),
+        path: "/accountInformationPage", component: () => import("./views/accountInformationPage.vue"),
     },
     {
-        path: "/vip", component: () => import("./views/VipPage.vue"),
-    },
-    {
-        path: "/shop", component: () => import("./views/ShopPage.vue"),
-        // children : [
-        //     {path : '/shop', name : 'Navbar', component : NavbarBox},]
-    },
-    {
-        path: "/donate", component: () => import("./views/DonatePage.vue"),
-    },
-    {
-        path: "/member", component: () => import("./views/MemberPage.vue"),
-    },
-    {
-      path: "/forgotPassword", component: () => import("./views/Richer-vip/forgotPassword.vue"),
-    },
-    {
-      path: "/login", component: () => import("./views/Richer-vip/login.vue"),
-    },
-    {
-        path: "/logout", component: () => import("./views/Richer-vip/logout.vue"),
-    },
-    {
-      path: "/register", component: () => import("./views/Richer-vip/register.vue"),
-    },
-    {
-      path: "/registers", component: () => import("./views/Richer-vip/registers.vue"),
-    },
+      path: "/accountRevisePage", component: () => import("./views/accountRevisePage.vue"),
+  }, {
+    path: "/checkCodePage", component: () => import("./views/checkCodePage.vue"),
+}, {
+  path: "/donateFoodInformationPage", component: () => import("./views/donateFoodInformationPage.vue"),
+}, {
+  path: "/emailCheckPage", component: () => import("./views/emailCheckPage.vue"),
+}, {
+  path: "/forgotPasswordPage", component: () => import("./views/forgotPasswordPage.vue"),
+}, {
+  path: "/loginPage", component: () => import("./views/loginPage.vue"),
+}, {
+  path: "/logoutPage", component: () => import("./views/logoutPage.vue"),
+}, {
+  path: "/newPasswordPage", component: () => import("./views/newPasswordPage.vue"),
+}, {
+  path: "/petAdoptionInformationPage", component: () => import("./views/petAdoptionInformationPage.vue"),
+}, {
+  path: "/returnPage", component: () => import("./views/returnPage.vue"),
+},
 ]
 export default createRouter({
     history: createWebHashHistory(),
