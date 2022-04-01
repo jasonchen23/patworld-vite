@@ -43,6 +43,10 @@ export default {
                     name: 'Andy',
                     detail: '動物領養頁面'
                 },
+                {
+                    name: 'Amy',
+                    detail: 'UI介面素材、首頁、開發人員頁面'
+                },
       ]
     }
   },
