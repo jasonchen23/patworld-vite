@@ -25,6 +25,9 @@ const routes = [
 }, {
   path: "/returnPage", component: () => import("./views/returnPage.vue"),
 },
+{
+  path: "/", component: () => import("./views/loginPage.vue"),
+},
 ]
 export default createRouter({
     history: createWebHashHistory(),

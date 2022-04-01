@@ -18,7 +18,7 @@
                     <label for="floatingPassword">Password:</label>
                 </div>
                    
-                <router-link to="/"><button class="button-30">會員登入 </button></router-link>
+                <router-link to="/accountInformationPage"><button class="button-30">會員登入 </button></router-link>
                      
                 
                 <p class="titleLogin">

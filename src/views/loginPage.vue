@@ -4,7 +4,7 @@
       <div class="row pt-5 justify-content-center">
         <button
           class="button-30 col-2"
-           role="button"
+           
           :class="{ active: isRegister }"
           @click="changeToRegister"
         >會員註冊
@@ -12,7 +12,7 @@
         </button>
         <button
           class="button-30 col-2"
-           role="button"
+          
           :class="{ active: isLogin }"
           @click="changeToLogin"
         >會員登入
@@ -26,6 +26,7 @@
         </div>
       </div>
     </div>
+    <router-view />
 </template>
 <script>
 import LoginPanel from '@/components/LoginPanel.vue';

@@ -56,7 +56,7 @@
                 <p class="titleLogin">已經註冊過了?
             <router-link to="/loginPage">登入</router-link>  
              </p>
-            
+            <router-view />
             </form>
         </div>
     </div>
