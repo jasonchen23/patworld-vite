@@ -13,7 +13,7 @@
       <div class="row">
         <div class="box row col px-3 d-flex align-items-end">
           <p id="p0">首頁</p>
-          <router-link to="/adopt" class="img ">
+          <router-link to="/" class="img ">
             <img src="../HomePage/img/tatemono_myhome.png" id="img0">
           </router-link>
         </div>
@@ -25,13 +25,13 @@
         </div>
         <div class="box row col px-3 d-flex align-items-end">
           <p id="p2">捐贈飼料</p>
-          <router-link to="/adopt" class="img ">
+          <router-link to="/donate" class="img ">
             <img src="../HomePage/img/tatemono_myhome.png" id="img2">
           </router-link>
         </div>
         <div class="box row col px-3 d-flex align-items-end">
           <p id="p3">會員中心</p>
-          <router-link to="/adopt" class="img ">
+          <router-link to="/user" class="img ">
             <img src="../HomePage/img/tatemono_myhome.png" id="img3">
           </router-link>
         </div>

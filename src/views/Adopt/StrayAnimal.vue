@@ -175,9 +175,13 @@
 
 <script>
 import Navbar from '@/components/NavbarBox.vue'
+import axios from 'axios'
 export default {
     components: {
         Navbar,
+    },
+    mounted(){
+        axios.get('/api/anim')
     }
 }
 

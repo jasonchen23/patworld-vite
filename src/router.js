@@ -6,12 +6,10 @@ const routes = [
         path: "/", component: () => import("./views/HomePage/HomePage.vue"),
     },
     {
-        path: "/vip", component: () => import("./views/VipPage.vue"),
+        path: "/user", component: () => import("./views/User/LoginView.vue"),
     },
     {
-        path: "/adopt", component: () => import("./views/Adopt/AdoptPage.vue"),
-        // children : [
-        //     {path : '', name : 'Stray',component: Stary},]
+        path: "/adopt", component: () => import("./views/Adopt/AdoptPage.vue")
     },
     {
         path: "/adopt/stray/", component: () => import("./views/Adopt/StrayAnimal.vue")
