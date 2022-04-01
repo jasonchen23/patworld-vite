@@ -12,6 +12,7 @@ const routes = [
         path: "/adopt", component: () => import("./views/Adopt/AdoptPage.vue")
     },
     {
+<<<<<<< HEAD
         path: "/adopt/stray/", component: () => import("./views/Adopt/StrayAnimal.vue")
     },
     {
@@ -20,6 +21,16 @@ const routes = [
     {
         path: "/donate2", component: () => import("./views/Donate/Donate2_list.vue"),
     },
+=======
+        path: "/donate", component: () => import("./views/DonatePage.vue"),
+        children : [
+            {path : '', component: () => import("./views/DonatePage.vue")},
+            {path : '/donate/list', component: () => import("./views/Donate2_list.vue")},
+            {path : '/donate/check', component: () => import("./views/Donate3_check.vue")},
+            {path : '/donate/pay', component: () => import("./views/Donate4_pay.vue")},
+            {path : '/donate/done', component: () => import("./views/Donate5_done.vue")}]
+        },
+>>>>>>> 6b0ff460814f82fb51252c37c04b2bd3244ed1fb
     {
         path: "/member", component: () => import("./views/MemberPage.vue"),
     },
