@@ -170,15 +170,18 @@
                     </div>
                 </div>
             </div>
+            <Card />
         </div>
     </div>
 </template>
 
 <script>
 import Navbar from '@/components/NavbarBox.vue'
+import Card from '@/components/AnimalCard.vue'
 export default {
     components: {
         Navbar,
+        Card,
     }
 }
 
