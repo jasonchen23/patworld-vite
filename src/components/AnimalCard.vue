@@ -3,23 +3,23 @@
         <img src="https://asms.coa.gov.tw/amlapp/upload/pic/b52f8716-c482-40ff-826b-926312e92d63_org.jpg"
             class="card-img-top" alt="..." />
         <div class="card-body">
-            <h5 class="card-title">傑森</h5>
+            <h5 v-bind:id="animalId" class="card-title">{{animalId}}</h5>
             <br>
             <div class="card-text row textBox">
                 <div class="img col-3">
-                    <img src="./vuesImages/id.svg">
+                    <img src=".././views/Adopt/vuesImages/id.svg">
                 </div>
                 <div class="text col-3">狗狗</div>
                 <div class="img col-3">
-                    <img src="./vuesImages/gender.svg">
+                    <img src=".././views/Adopt/vuesImages/gender.svg">
                 </div>
                 <div class="text col-3">男生</div>
                 <div class="img col-3">
-                    <img src="./vuesImages/狗掌.svg">
+                    <img src=".././views/Adopt/vuesImages/狗掌.svg">
                 </div>
                 <div class="text col-3">拉布拉多</div>
                 <div class="img col-3">
-                    <img src="./vuesImages/home.svg">
+                    <img src=".././views/Adopt/vuesImages/home.svg">
                 </div>
                 <div class="text col-3">新北市</div>
             </div>
@@ -35,29 +35,24 @@
     export default {
     data(){
         return{
-            serverPath: this.$store.state.serverPath
+            // serverPath: this.$store.state.serverPath
+            animalId: "傑森仔"
+            // data:[],
         }
     },
-    // props:{
-    //     'id': Number,
-    //     'img_path': String,
-    //     'brand': String,
-    //     'category': String,
-    //     'name': String,
-    //     'price': Number,
-    //     'has_border':{
-    //         type: Boolean,
-    //         default: false
-    //     }
-    // },
-    // methods:{
-    //     parseImgPath: function(path){
-    //         return this.serverPath + path;
-    //     },
-    //     redirectProduct: function(id){
-    //         this.$router.push(`/products/${id}`)
-    //     }
-    // }
+    props:{
+        
+        
+    },
+    methods:{
+        // parseImgPath: function(path){
+        //     return this.serverPath + path;
+        // },
+        // redirectProduct: function(id){
+        //     this.$router.push(`/products/${id}`)
+        // }
+    },
+
 }
 </script>
 

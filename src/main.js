@@ -5,7 +5,7 @@ import store from './vuex.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap';
 import $ from "jquery";
-
+import axios from 'axios';
 const app=createApp(App)
 app.use(store)
 app.use(router)

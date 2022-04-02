@@ -101,6 +101,7 @@
                         <input type="button" value="搜尋" class="button" />
                     </div>
                 </form>
+                 <Card v-bind = animalData />
             </div>
             <!-- 卡片區 -->
             <!-- <div class="infomation">
@@ -137,40 +138,10 @@
                     </div>
                 </div>
             </div>-->
-            <div class="card text-white bg-success" style="width: 25rem;">
-                <img src="https://asms.coa.gov.tw/amlapp/upload/pic/b52f8716-c482-40ff-826b-926312e92d63_org.jpg" class="card-img-top" alt="..." />
-                <div class="card-body">
-                    <h5 class="card-title">傑森</h5>
-                    <br>
-                    <div class="card-text row textBox">
-                        <div class="img col-3">
-                            <img src="./vuesImages/id.svg" alt />
-                        </div>
-                        <div class="text col-3">狗狗</div>
-                        <div class="img col-3">
-                            <img src="./vuesImages/gender.svg">
-                        </div>
-                        <div class="text col-3">男生</div>
-                        <div class="img col-3">
-                            <img src="./vuesImages/狗掌.svg" alt />
-                        </div>
-                        <div class="text col-3">拉布拉多</div>
-                        <div class="img col-3">
-                            <img src="./vuesImages/home.svg" alt />
-                        </div>
-                        <div class="text col-3">新北市</div>
-                    </div>
-                    <br />
-                    <div class="button">
-                        <router-link
-                        to="/detail"
-                        style="text-decoration:none;"
-                        class="btn btn-light"
-                    >詳細資料</router-link>
-                    </div>
-                </div>
-            </div>
-            <Card />
+            <!-- <template v-for="animalData in data" :key="animalData">
+             <Card v-bind = animalData />   
+            </template> -->
+            
         </div>
     </div>
 </template>
@@ -178,10 +149,21 @@
 <script>
 import Navbar from '@/components/NavbarBox.vue'
 import Card from '@/components/AnimalCard.vue'
+import axios from 'axios'
 export default {
     components: {
         Navbar,
         Card,
+    },
+    data(){
+        return{
+            data:[]
+        }
+    },
+    mounted(){
+        axios.get('/api/animal')
+        .then(res => console.log(res))
+        // .then(console.log(this.data))
     }
 }
 
