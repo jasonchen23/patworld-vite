@@ -7,6 +7,8 @@ import 'bootstrap';
 import $ from "jquery";
 // Vue.prototype.$ = $;
 import axios from 'axios';
+import './assets/font/font.css';
+
 const app =createApp(App);
 // axios.defaults.baseURL = process.env.VUE_APP_API_BASE_URL;
 // axios.defaults.withCredentials = true;

@@ -1,11 +1,9 @@
 <template>
   <Navbar />
-    <div class="container pt-5">
-      <div class="row">
+    <div class="row row-cols-1 row-cols-md-6 g-4 d-flex justify-content-center pt-5">
         <template v-for="member in members" :key="member">
           <MemberCard v-bind="member" />
         </template>
-      </div>
     </div>
 </template>
 
@@ -53,9 +51,9 @@ export default {
 
 <style>
 body {
-        background: #fffaf4
-      }
-
-
+  background: #FEFAE5;
+  font-family: jf-openhuninn;
+  color: #802300;
+}
 
 </style>
