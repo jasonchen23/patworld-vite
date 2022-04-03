@@ -1,15 +1,12 @@
 <template>
-    <Navbar />
+  <Navbar />
     <div class="container pt-5">
       <div class="row">
-                  <div class="developer animate__animated animate__fadeInUp">
         <template v-for="member in members" :key="member">
           <MemberCard v-bind="member" />
         </template>
-        </div>
       </div>
     </div>
-    
 </template>
 
 
@@ -56,28 +53,9 @@ export default {
 
 <style>
 body {
-        background: rgba(255, 250, 244, 1)
+        background: #fffaf4
       }
 
-    h2{
-      font-weight: bold;
-    }
 
-    .developer {
-      display:flex;
-      justify-content: center;
-    }
 
-    .card {
-      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);transition: 0.3s;
-      width: 250px;
-      height: 500px;
-     
-      
-    }
-
-    .container {
-      justify-content: center;
-      text-align: center;
-    }
 </style>
