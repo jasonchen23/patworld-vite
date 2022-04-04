@@ -2,27 +2,7 @@
   <div class="body">
     <Navbar />
     <div class="container">
-      <div class="row detail">
-        <!-- 流浪動物照片 -->
-        <div class="animalImg col-lg-6">
-          <img
-            src="https://asms.coa.gov.tw/amlapp/upload/pic/b52f8716-c482-40ff-826b-926312e92d63_org.jpg"
-            alt
-          />
-        </div>
-        <!-- 資訊 -->
-        <div class="animalInfo col-lg-6">
-          <h1>傑森</h1>
-          <ul>
-            <li>種類：狗狗</li>
-            <li>品種：拉布拉多</li>
-            <li>性別：男性</li>
-            <li>位於：新北市</li>
-            <li>收容所：劉媽媽動物之家</li>
-            <li>收容日期：2022/03/22</li>
-          </ul>
-        </div>
-      </div>
+       <Card />
       <div class="footer d-flex align-items-end">
         <img src="./vuesImages/info1.svg" alt="">
         <img src="./vuesImages/info2.svg" alt="">
@@ -38,9 +18,11 @@
 
 <script>
 import Navbar from '@/components/NavbarBox.vue'
+import Card from '@/components/AnimalDetailCard.vue'
 export default {
   components: {
     Navbar,
+    Card,
   },
 }
 </script>
@@ -55,7 +37,6 @@ export default {
   /* font-family: "Cubic_11"; */
   /* height: 100%; */
   /* background: #ebc79c; */
-  margin-top: -0.5vh;
 }
 .detail {
   display: flex;

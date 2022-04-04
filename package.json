@@ -10,8 +10,13 @@
   "dependencies": {
     "axios": "^0.26.1",
     "jquery": "^3.6.0",
+    "vee-validate": "^4.5.10",
     "vue": "^3.2.25",
     "vue-router": "^4.0.13",
+    "vue-sweetalert2": "^5.0.2",
+    "vue3-popper": "^1.4.2",
+    "vuejs-paginate": "^2.1.0",
+    "vuejs-paginate-next": "^1.0.2",
     "vuex": "^4.0.0",
     "vuex-persistedstate": "^4.1.0",
     "vue-sweetalert2": "^5.0.2",

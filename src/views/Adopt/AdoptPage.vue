@@ -22,11 +22,16 @@
            </div>
        </div>
        <div class="footer d-flex align-items-end">
-           <div class="footerImg1">
+           <div class="footerImg1 hor">
                <img src="./vuesImages/帶我回家.svg" alt="" class="footerImg">
            </div>
-           <div class="footerImg2">
-               <img src="./vuesImages/myHome.svg" alt="" class="footerImg">
+           <div class="footerImg2" id="hid">
+               <router-link
+                        to="/adopt/strayAnimal"
+                        style="text-decoration:none;"
+                    >
+                        <img src="./vuesImages/myHome.svg" alt="" class="footerImg">
+                    </router-link>
            </div>
            <div class="footerImg3">
                <img src="./vuesImages/一起找個家.svg" alt="" class="footerImg">
@@ -149,6 +154,7 @@ src: url("@/views/Adopt/vuesImages/Cubic_11.woff") format("woff");
 .footer{
     display: flex;
     justify-content: center;
+    margin-right: 5vw;
 }
 .footerImg1{
     display: inline-block;
@@ -170,54 +176,5 @@ src: url("@/views/Adopt/vuesImages/Cubic_11.woff") format("woff");
     height: 25vh;
     margin-top: 22vh;
     margin-left: 8vw;
-}
-.enterButton{
-  align-items: center;
-  appearance: none;
-  background-color: #FCFCFD;
-  border-radius: 4px;
-  border-width: 0;
-  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
-  box-sizing: border-box;
-  color: #36395A;
-  cursor: pointer;
-  display: inline-flex;
-  font-family: "JetBrains Mono",monospace;
-  height: 4vh;
-  width: 9vw;
-  justify-content: center;
-  line-height: 1;
-  list-style: none;
-  overflow: hidden;
-  padding-left: 16px;
-  padding-right: 16px;
-  position: relative;
-  text-align: left;
-  text-decoration: none;
-  transition: box-shadow .15s,transform .15s;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  white-space: nowrap;
-  will-change: box-shadow,transform;
-  font-size: 18px;
-  position: relative ;
-  /* top: 43vh; */
-  right: 50vw;
-  margin-top: 1px;
-}
-
-.enterButton:focus {
-  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(140, 136, 148, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
-}
-
-.enterButton:hover {
-  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
-  transform: translateY(-2px);
-}
-
-.enterButton:active {
-  box-shadow: #D6D6E7 0 3px 7px inset;
-  transform: translateY(2px);
 }
 </style>

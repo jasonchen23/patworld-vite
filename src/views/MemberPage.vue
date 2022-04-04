@@ -53,6 +53,9 @@ export default {
 </script>
 
 <style>
+body {
+    background: rgba(255, 250, 244, 1);
+}
 
 body {
   background: #FEFAE5;
