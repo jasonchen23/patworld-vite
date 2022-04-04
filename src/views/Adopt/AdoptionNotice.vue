@@ -142,13 +142,13 @@ export default {
         $(".yesNoBox1").click(function () {
 
             if (toggle1) {
-                $(".yesNo1").attr("src", "src/views/vuesImages/yes.svg");
+                $(".yesNo1").attr("src", "src/views/Adopt/vuesImages/yes.svg");
                 $("#yesNoText1").html("是");
                 $("#yesNoText1").attr("class", "yes")
                 toggle1 = false;
                 console.log(toggle1);
             } else {
-                $(".yesNo1").attr("src", "src/views/vuesImages/no.svg");
+                $(".yesNo1").attr("src", "src/views/Adopt/vuesImages/no.svg");
                 $("#yesNoText1").html("否");
                 $("#yesNoText1").attr("class", "no");
                 toggle1 = true;
@@ -158,12 +158,12 @@ export default {
 
         $(".yesNoBox2").click(function () {
             if (toggle2) {
-                $(".yesNo2").attr("src", "src/views/vuesImages/yes.svg");
+                $(".yesNo2").attr("src", "src/views/Adopt/vuesImages/yes.svg");
                 $("#yesNoText2").html("是");
                 $("#yesNoText2").attr("class", "yes")
                 toggle2 = false;
             } else {
-                $(".yesNo2").attr("src", "src/views/vuesImages/no.svg");
+                $(".yesNo2").attr("src", "src/views/Adopt/vuesImages/no.svg");
                 $("#yesNoText2").html("否");
                 $("#yesNoText2").attr("class", "no");
                 toggle2 = true;
@@ -172,12 +172,12 @@ export default {
 
         $(".yesNoBox3").click(function () {
             if (toggle3) {
-                $(".yesNo3").attr("src", "src/views/vuesImages/yes.svg");
+                $(".yesNo3").attr("src", "src/views/Adopt/vuesImages/yes.svg");
                 $("#yesNoText3").html("是");
                 $("#yesNoText3").attr("class", "yes");
                 toggle3 = false;
             } else {
-                $(".yesNo3").attr("src", "src/views/vuesImages/no.svg");
+                $(".yesNo3").attr("src", "src/views/Adopt/vuesImages/no.svg");
                 $("#yesNoText3").html("否");
                 $("#yesNoText3").attr("class", "no");
                 toggle3 = true;
@@ -186,12 +186,12 @@ export default {
 
         $(".yesNoBox4").click(function () {
             if (toggle4) {
-                $(".yesNo4").attr("src", "src/views/vuesImages/yes.svg");
+                $(".yesNo4").attr("src", "src/views/Adopt/vuesImages/yes.svg");
                 $("#yesNoText4").html("是");
                 $("#yesNoText4").attr("class", "yes");
                 toggle4 = false;
             } else {
-                $(".yesNo4").attr("src", "src/views/vuesImages/no.svg");
+                $(".yesNo4").attr("src", "src/views/Adopt/vuesImages/no.svg");
                 $("#yesNoText4").html("否");
                 $("#yesNoText4").attr("class", "no");
                 toggle4 = true;
@@ -200,12 +200,12 @@ export default {
 
         $(".yesNoBox5").click(function () {
             if (toggle5) {
-                $(".yesNo5").attr("src", "src/views/vuesImages/yes.svg");
+                $(".yesNo5").attr("src", "src/views/Adopt/vuesImages/yes.svg");
                 $("#yesNoText5").html("是");
                 $("#yesNoText5").attr("class", "yes");
                 toggle5 = false;
             } else {
-                $(".yesNo5").attr("src", "src/views/vuesImages/no.svg");
+                $(".yesNo5").attr("src", "src/views/Adopt/vuesImages/no.svg");
                 $("#yesNoText5").html("否");
                 $("#yesNoText5").attr("class", "no");
                 toggle5 = true;

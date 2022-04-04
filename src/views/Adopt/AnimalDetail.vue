@@ -18,7 +18,7 @@
 
 <script>
 import Navbar from '@/components/NavbarBox.vue'
-import Card from '@/components/AnimalDetailCard.vue'
+import Card from '@/components/Adopt/AnimalDetailCard.vue'
 export default {
   components: {
     Navbar,

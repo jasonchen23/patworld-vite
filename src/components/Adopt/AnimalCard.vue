@@ -7,19 +7,19 @@
             <br>
             <div class="card-text row textBox">
                 <div class="img col-3">
-                    <img src=".././views/Adopt/vuesImages/id.svg">
+                    <img src="@/views/Adopt/vuesImages/id.svg">
                 </div>
                 <div class="text col-3">{{animal_kind}}</div>
                 <div class="img col-3">
-                    <img src=".././views/Adopt/vuesImages/gender.svg">
+                    <img src="@/views/Adopt/vuesImages/gender.svg">
                 </div>
                 <div class="text col-3">{{animal_sex}}</div>
                 <div class="img col-3">
-                    <img src=".././views/Adopt/vuesImages/狗掌.svg">
+                    <img src="@/views/Adopt/vuesImages/狗掌.svg">
                 </div>
                 <div class="text col-3">{{animal_Variety}}</div>
                 <div class="img col-3">
-                    <img src=".././views/Adopt/vuesImages/dog.svg">
+                    <img src="@/views/Adopt/vuesImages/dog.svg">
                 </div>
                 <div class="text col-3">{{animal_bodytype}}</div>
             </div>

@@ -3,7 +3,7 @@ import Stary from "./views/Adopt/StrayAnimal.vue";
 // import NavbarBox from "@/components/NavbarBox.vue"
 const routes = [
     {
-        path: "/", component: () => import("./views/HomePage/HomePage.vue"),
+        path: "", component: () => import("./views/HomePage/HomePage.vue"),
     },
     {
         path: "/user", component: () => import("./views/User/LoginView.vue"),
@@ -19,6 +19,15 @@ const routes = [
     },
     {
         path: "/donate", component: () => import("./views/Donate/DonatePage.vue"),
+    },
+    {
+        path: "/donate/list", component: () => import("./views/Donate/Donate2.vue"),
+    },
+    {
+        path: "/donate/form", component: () => import("./views/Donate/Donate3.vue"),
+    },
+    {
+        path: "/donate/done", component: () => import("./views/Donate/Donate4.vue"),
     },
     {
         path: "/member", component: () => import("./views/MemberPage.vue"),
