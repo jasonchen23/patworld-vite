@@ -1,7 +1,7 @@
 <template>
-    <div class="card text-white bg-success" style="width: 25rem;">
-        <img src="https://asms.coa.gov.tw/amlapp/upload/pic/b52f8716-c482-40ff-826b-926312e92d63_org.jpg"
-            class="card-img-top" alt="..." />
+    <div class="typesetting">
+        <div class="card text-white bg-success" style="width: 25rem;">
+        <img v-bind:src="album_file" class="card-img-top animalImg" alt="..." />
         <div class="card-body">
             <h5 v-bind:id="animalId" class="card-title">{{animalId}}</h5>
             <br>
@@ -9,25 +9,26 @@
                 <div class="img col-3">
                     <img src=".././views/Adopt/vuesImages/id.svg">
                 </div>
-                <div class="text col-3">狗狗</div>
+                <div class="text col-3">{{animal_kind}}</div>
                 <div class="img col-3">
                     <img src=".././views/Adopt/vuesImages/gender.svg">
                 </div>
-                <div class="text col-3">男生</div>
+                <div class="text col-3">{{animal_sex}}</div>
                 <div class="img col-3">
                     <img src=".././views/Adopt/vuesImages/狗掌.svg">
                 </div>
-                <div class="text col-3">拉布拉多</div>
+                <div class="text col-3">{{animal_Variety}}</div>
                 <div class="img col-3">
-                    <img src=".././views/Adopt/vuesImages/home.svg">
+                    <img src=".././views/Adopt/vuesImages/dog.svg">
                 </div>
-                <div class="text col-3">新北市</div>
+                <div class="text col-3">{{animal_bodytype}}</div>
             </div>
             <br>
             <div class="button">
-                <router-link to="/detail" style="text-decoration:none;" class="btn btn-light">詳細資料</router-link>
+                <router-link to="/adopt/strayAnimal/:strayAnimalId" style="text-decoration:none;" class="btn btn-light">詳細資料</router-link>
             </div>
         </div>
+    </div>
     </div>
 </template>
 
@@ -35,14 +36,22 @@
     export default {
     data(){
         return{
-            // serverPath: this.$store.state.serverPath
-            animalId: "傑森仔"
-            // data:[],
+            // serverPath: this.$store.state.serverPath,
+            // animalId: "傑森仔"
+            data:[],
         }
     },
     props:{
-        
-        
+    "animal_id": Number,
+    "animal_place": String,
+    "animal_kind": String,
+    "animal_sex": String,
+    "animal_createtime": String,
+    "shelter_name": String,
+    "album_file": String,
+    "shelter_address": String,
+    "animal_Variety": String,
+    "animal_bodytype": String,
     },
     methods:{
         // parseImgPath: function(path){
@@ -57,6 +66,9 @@
 </script>
 
 <style scoped>
+.typesetting {
+    margin: 1%;
+}
 .button {
     align-items: center;
     appearance: none;
@@ -118,6 +130,7 @@
 }
 .img img {
     width: 3vw;
+    max-height: 100px;
 }
 .textBox {
     margin-right: 6%;
@@ -126,5 +139,8 @@
     display: flex;
     justify-content: center;
     margin-left: 135px;
+}
+.animalImg{
+    max-height: 33vh;
 }
 </style>

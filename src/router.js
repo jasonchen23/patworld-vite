@@ -12,7 +12,10 @@ const routes = [
         path: "/adopt", component: () => import("./views/Adopt/AdoptPage.vue")
     },
     {
-        path: "/adopt/stray/", component: () => import("./views/Adopt/StrayAnimal.vue")
+        path: "/adopt/strayAnimal", component: () => import("./views/Adopt/StrayAnimal.vue")
+    },
+    {
+        path: "/adopt/strayAnimal/:strayAnimalId", component: () => import("./views/Adopt/AnimalDetail.vue") ,
     },
     {
         path: "/donate", component: () => import("./views/Donate/DonatePage.vue"),
@@ -21,16 +24,13 @@ const routes = [
         path: "/member", component: () => import("./views/MemberPage.vue"),
     },
     {
-        path: "/detail", component: () => import("./views/Adopt/AnimalDetail.vue") ,
-    },
-    {
         path: "/notice", component: () => import("./views/Adopt/AdoptionNotice.vue")
     },
     {
         path: "/fillin", component: () => import("./views/Adopt/AdopterFillin.vue")
     },
     {
-        path: "/sent", component: () => import("./views/Adopt/DataSent.vue")
+        // path: "/sent", component: () => import("./views/Adopt/DataSent.vue")
     },
     
     

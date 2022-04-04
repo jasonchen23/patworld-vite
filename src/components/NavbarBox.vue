@@ -1,9 +1,9 @@
 <template>
   <nav class="container" id="nav">
         <router-link to="/">Home</router-link> ||
-        <router-link to="/login"><a>login</a></router-link> || 
+        <router-link to="/user"><a>login</a></router-link> || 
         <router-link to="/adopt"><a>ADOPT</a></router-link> || 
-        <router-link to="/stray"><a>STRAY</a></router-link> || 
+        <!-- <router-link to="/stray"><a>STRAY</a></router-link> ||  -->
         <router-link to="/donate"><a>DONATE</a></router-link> || 
         <router-link to="/member"><a>MEMBER</a></router-link> ||
   </nav>

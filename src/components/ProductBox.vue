@@ -3,9 +3,9 @@
         <div class="image-box">
             <img :src="parseImgPath(img_path)">
         </div>
-        <!-- <h4>{{brand}} <small>{{category}}</small></h4> -->
-        <!-- <h3>{{name}}</h3> -->
-        <!-- <p>售價: {{ price }}</p> -->
+        <h4>{{brand}} <small>{{category}}</small></h4> -->
+        <h3>{{name}}</h3>
+        <p>售價: {{ price }}</p>
         <slot></slot>
     </div>
 </template>
@@ -57,7 +57,8 @@ export default {
     }
     img{
         display: block;
-        width: 50%;
+        max-width: 50%;
+        height: 100px;
         margin: auto;
     }
 </style>

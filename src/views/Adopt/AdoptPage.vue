@@ -27,7 +27,7 @@
            </div>
            <div class="footerImg2" id="hid">
                <router-link
-                        to="/stray"
+                        to="/adopt/strayAnimal"
                         style="text-decoration:none;"
                     >
                         <img src="./vuesImages/myHome.svg" alt="" class="footerImg">
