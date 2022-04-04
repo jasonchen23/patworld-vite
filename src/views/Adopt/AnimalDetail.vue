@@ -1,5 +1,5 @@
 <template>
-  <div class="body">
+  <div>
     <Navbar />
     <div class="container">
        <Card />
@@ -33,11 +33,6 @@ export default {
   src: url("@/vuesImages/Cubic_11.woff") format("woff");
 }
 
-.body {
-  /* font-family: "Cubic_11"; */
-  /* height: 100%; */
-  /* background: #ebc79c; */
-}
 .detail {
   display: flex;
   justify-content: center;
