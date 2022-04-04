@@ -76,7 +76,7 @@ export default {
   position: relative;
 }
 .bg {
-  background-image: url("../HomePage/img/bg_chiheisen_green.jpg");
+  background-image: url("../HomePage/img/background.png");
 
   /* Full height */
   height: 100vh;

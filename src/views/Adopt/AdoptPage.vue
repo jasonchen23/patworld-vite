@@ -45,11 +45,10 @@
 
 <script>
 import Navbar from '@/components/NavbarBox.vue'
-import Product from '@/components/ProductBox.vue'
+// import Product from '@/components/ProductBox.vue'
 export default {
     components: {
         Navbar,
-        Product
     },
     data(){
         return{

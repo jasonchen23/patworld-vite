@@ -1,0 +1,7 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(./jf-openhuninn-1.1) format("truetype");
+    font-weight: 400;
+    font-display: "auto";
+    font-style: normal;
+}
