@@ -35,7 +35,7 @@
 
 <script>
 import Navbar from '@/components/NavbarBox.vue'
-import Product from '@/components/DonateProductBox.vue'
+import Product from '@/components/Donate/DonateProductBox.vue'
 // import DonateList from '@/components/DonateListBox.vue'
 
 
