@@ -5,19 +5,22 @@
           <MemberCard v-bind="member" />
         </template>
     </div>
+  <Footer class="mt-5 pt-3"/>
 </template>
-
 
 
 
 <script>
 import Navbar from "@/components/NavbarBox.vue";
 import MemberCard from "@/components/MemberCard.vue";
+import Footer from "@/components/FooterBox.vue";
+
 
 export default {
   components: {
     MemberCard,
     Navbar,
+    Footer,
   },
   data() {
     return {
@@ -50,6 +53,7 @@ export default {
 </script>
 
 <style>
+
 body {
   background: #FEFAE5;
   font-family: jf-openhuninn;
