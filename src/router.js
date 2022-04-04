@@ -18,6 +18,15 @@ const routes = [
         path: "/donate", component: () => import("./views/Donate/DonatePage.vue"),
     },
     {
+        path: "/donate/list", component: () => import("./views/Donate/Donate2.vue"),
+    },
+    {
+        path: "/donate/form", component: () => import("./views/Donate/Donate3.vue"),
+    },
+    {
+        path: "/donate/done", component: () => import("./views/Donate/Donate4.vue"),
+    },
+    {
         path: "/member", component: () => import("./views/MemberPage.vue"),
     },
     {
