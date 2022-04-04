@@ -10,15 +10,15 @@
 
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="https://media.istockphoto.com/photos/funny-friends-cute-cat-and-corgi-dog-are-lying-on-a-white-bed-picture-id1347494018?b=1&k=20&m=1347494018&s=170667a&w=0&h=nYHDAKQ1IJYqW10KHy1wMjYbLmVHPqeRkf9rQ4hnMVI=" class="d-block w-100" alt="...">
+          <img src="src\views\Donate\DonateImages\donate1.svg" class="d-block w-100" alt="...">
         </div>
 
         <div class="carousel-item">
-          <img src="https://media.istockphoto.com/photos/dog-in-a-leprechaun-hat-sits-on-a-white-background-with-green-clovers-picture-id1369759625?b=1&k=20&m=1369759625&s=170667a&w=0&h=ognh6EJrW2F7reagYZgmzyjw65rPjCmgjmB8WdH5bTc=" class="d-block w-100" alt="...">
+          <img src="src\views\Donate\DonateImages\donate2.svg" class="d-block w-100" alt="...">
         </div>
 
         <div class="carousel-item">
-          <img src="https://media.istockphoto.com/photos/puppy-spaniel-picture-id1292870356?b=1&k=20&m=1292870356&s=170667a&w=0&h=mUWbeeG1Bn5Wav-FitzqYAGF11l9U-ONBdb1ErX4hg8=" class="d-block w-100" alt="...">
+          <img src="src\views\Donate\DonateImages\donate3.svg" class="d-block w-100" alt="...">
         </div>
       </div>
 
@@ -34,10 +34,11 @@
     </div>
 </div>
 
-<router-link to="/donate/donate2">
+<router-link to="/donate/list">
   <button class="button-30" role="button">我要捐飼料</button>
 </router-link>
 
+<router-view></router-view>
 </template>
 
 <script>
@@ -47,7 +48,7 @@ import Navbar from '@/components/NavbarBox.vue'
 export default {
   components:{
     Navbar,
-    // Button,
+    Button,
   },
   data(){
 
