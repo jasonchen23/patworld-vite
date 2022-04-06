@@ -1,11 +1,16 @@
 <template>
-  <Navbar />
-    <div class="row row-cols-1 row-cols-md-6 g-4 d-flex justify-content-center pt-5">
-        <template v-for="member in members" :key="member">
-          <MemberCard v-bind="member" />
-        </template>
+  <Navbar/>
+    <div class="d-flex pt-5 align-items-center">
+        <div class="row row-cols-1 row-cols-md-6 g-4 justify-content-center ">
+            <template v-for="member in members" :key="member">
+              <MemberCard v-bind="member"  />
+            </template>
+        </div>
     </div>
-  <Footer class="mt-5 pt-3"/>
+    <div class="fixed-bottom">
+      <Footer class="mt-5 pt-3 "/>
+    </div>
+  
 </template>
 
 
@@ -52,13 +57,11 @@ export default {
 };
 </script>
 
-<style>
-body {
-    background: rgba(255, 250, 244, 1);
-}
+<style  scoped>
+
 
 body {
-  background: #FEFAE5;
+  background: #fcfcfd;
   font-family: jf-openhuninn;
   color: #802300;
 }

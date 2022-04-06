@@ -50,5 +50,6 @@ export default {
     a{
     color: #802300;
     text-decoration:none;
+    font-family: jf-openhuninn;
     }
 </style>
