@@ -4,7 +4,7 @@
         <div class="titleBox">
             <h1>
                 <img src="./vuesImages/肉球.svg" />
-                領養人資料填寫
+                領養人資料確認
                 <img src="./vuesImages/肉球.svg" />
             </h1>
         </div>
@@ -17,12 +17,14 @@
                 <input type="text" name id class="form-control" placeholder="領養人職業" />
                 <input type="text" name id class="form-control" placeholder="領養人年齡" />
                 <br />
-                <router-link to="/sent" style="text-decoration:none;">
-                    <input type="button" value="送出資料" class="sentButton" />
-                </router-link>
             </form>
             <br />
         </div>
+        <router-link to="/sent" style="text-decoration:none;">
+            <div>
+                <input type="button" value="送出資料" class="sentButton" />
+            </div>
+        </router-link>
         <div class="tree container">
             <img src="./vuesImages/tree.svg" alt />
             <img src="./vuesImages/tree.svg" alt />
@@ -63,8 +65,8 @@ h1 img {
     cursor: pointer;
     display: inline-flex;
     font-family: "JetBrains Mono", monospace;
-    height: 10vh;
-    width: 20vw;
+    height: 80px;
+    width: 200px;
     justify-content: center;
     line-height: 1;
     list-style: none;
@@ -80,7 +82,7 @@ h1 img {
     touch-action: manipulation;
     white-space: nowrap;
     will-change: box-shadow, transform;
-    font-size: 3vw;
+    font-size: 200%;
     margin-bottom: 1%;
 }
 
@@ -115,5 +117,11 @@ h1 img {
 .tree {
     display: flex;
     justify-content: space-between;
+}
+input {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
 }
 </style>

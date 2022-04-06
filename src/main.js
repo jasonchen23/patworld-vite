@@ -8,6 +8,8 @@ import VueSweetalert2 from 'vue-sweetalert2';
 import 'sweetalert2/dist/sweetalert2.min.css';
 import $ from "jquery";
 import axios from 'axios';
+import './assets/font/font.css';
+
 const app =createApp(App);
 axios.defaults.baseURL = import.meta.env.VITE_APP_API_BASE_URL;
 axios.defaults.withCredentials = true;
