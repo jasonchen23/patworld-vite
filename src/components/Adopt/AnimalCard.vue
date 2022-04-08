@@ -24,7 +24,7 @@
                 <div class="text col-3">{{animal_bodytype}}</div>
             </div>
             <br>
-            <div class="button">
+            <div class="button" @click="goToAnimalDetail(animal_id)">
                 <router-link to="/adopt/strayAnimal/:strayAnimalId" style="text-decoration:none;" class="btn btn-light">詳細資料</router-link>
             </div>
         </div>
