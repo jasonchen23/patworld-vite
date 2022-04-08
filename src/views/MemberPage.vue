@@ -1,16 +1,21 @@
 <template>
-  <Navbar/>
-    <div class="d-flex pt-5 align-items-center">
-        <div class="row row-cols-1 row-cols-md-6 g-4 justify-content-center ">
-            <template v-for="member in members" :key="member">
-              <MemberCard v-bind="member"  />
-            </template>
+    <div class="container-fluid">
+      <div class="row vh-100">
+        <div class="row align-items-start">
+          <Navbar class="col" />
         </div>
+          <div class="row align-items-center">
+            <div class="row row-cols-1 row-cols-md-6 g-4 justify-content-center">
+              <template v-for="member in members" :key="member">
+                <MemberCard v-bind="member"  />
+              </template>
+            </div>
+          </div>
+        <div class="row align-items-end">
+          <Footer class="col"/>
+        </div>
+      </div>
     </div>
-    <div class="fixed-bottom">
-      <Footer class="mt-5 pt-3 "/>
-    </div>
-  
 </template>
 
 
