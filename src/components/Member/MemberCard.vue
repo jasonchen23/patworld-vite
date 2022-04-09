@@ -13,6 +13,7 @@
     </div>
     </div>
  </div>
+
 </template>
 
 <script>
@@ -23,7 +24,6 @@ export default {
   }
 }
 
-
 </script>
 
 <style>
@@ -32,4 +32,5 @@ h2, h5{
 font-family: jf-openhuninn;
 color: #802300;
 }
+
 </style>

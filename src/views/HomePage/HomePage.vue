@@ -1,4 +1,5 @@
 <template>
+
     <div class="row bg">
         <div></div>
         <h1 class="pt-5 fw-bold display-1">Pet World</h1>
@@ -6,41 +7,41 @@
           <div>
             <img src="" alt="">
           </div>
-          <div class="col pb-4">
-            <router-link to="/" data-bs-toggle="tooltip" data-bs-placement="top" title="我是提示内容!">
+          <div class="col pb-4 homeTooltip">
+            <router-link to="/">
+              <p class="tooltiptext">首頁</p>
               <img src="../HomePage/img/tatemono_myhome.png">
             </router-link>
           </div>
-          <div class="col pb-4">
-            <router-link to="/adopt" title="領養寵物" data-toggle="tooltip" >
+          <div class="col pb-4 homeTooltip">
+            <router-link to="/adopt">
+              <p class="tooltiptext">領養寵物</p>
               <img src="../HomePage/img/tatemono_myhome_gren.png">
             </router-link>
           </div>
-          <div class="col pb-4">
-            <router-link to="/donate" title="捐贈飼料" data-toggle="tooltip">
+          <div class="col pb-4 homeTooltip">
+            <router-link to="/donate">
+              <p class="tooltiptext">捐贈飼料</p>
               <img src="../HomePage/img/tatemono_myhome_orange.png">
             </router-link>
           </div>
-          <div class="col pb-4">
-            <router-link to="/user" title="會員中心" data-toggle="tooltip" >
+          <div class="col pb-4 homeTooltip">
+            <router-link to="/user">
+            <p class="tooltiptext">會員中心</p>
               <img src="../HomePage/img/tatemono_myhome_purple.png">
             </router-link>
           </div>
-          <div class="col pb-4">
-            <router-link to="/member" title="開發人員介紹" data-toggle="tooltip" >
+          <div class="col pb-4 homeTooltip">
+            <router-link to="/member">
+              <p class="tooltiptext">開發人員介紹</p>
               <img src="../HomePage/img/tatemono_myhome_red.png">
             </router-link>
           </div>
         </div>
     </div>
-    
 </template>
 
 <script>
-var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-  return new bootstrap.Tooltip(tooltipTriggerEl)
-})
 </script>
 
 <style scoped>
@@ -72,15 +73,51 @@ img:hover {
   transform: scale(1.2);
 }
 
-.ui-tooltip {
+/* .ui-tooltip {
   padding: 10px 20px;
   color: white;
   border-radius: 20px;
   font: bold 14px "jf-openhuninn",;
   text-transform: uppercase;
   box-shadow: 0 0 7px black;
+} */
+
+.homeTooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted #802300;
 }
 
+.homeTooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #FFF;
+    color: #802300;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* 定位 */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+.homeTooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #FFF transparent transparent transparent;
+}
+
+.homeTooltip:hover .tooltiptext {
+    visibility: visible;
+}
 
   
 </style>
