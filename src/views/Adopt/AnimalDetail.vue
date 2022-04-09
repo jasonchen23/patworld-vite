@@ -2,7 +2,24 @@
   <div>
     <Navbar />
     <div class="container">
-       <Card />
+       <div class="row detail">
+      <!-- 流浪動物照片 -->
+      <div class="animalImg col-lg-6">
+        <img v-bind:src="animaldetail.album_file">
+      </div>
+      <!-- 資訊 -->
+      <div class="animalInfo col-lg-6">
+        <h1>流浪動物編號： {{ animaldetail.animal_id }}</h1>
+        <br>
+        <ul>
+          <li>種類： {{ animaldetail.animal_kind }}</li>
+          <li>品種： {{ animaldetail.animal_Variety }}</li>
+          <li>性別(Male/Female)： {{ animaldetail.animal_sex }}</li>
+          <li>收容所：{{ animaldetail.shelter_name }}</li>
+          <li>收容日期： {{ animaldetail.animal_createtime }}</li>
+        </ul>
+      </div>
+    </div>
       <div class="footer d-flex align-items-end">
         <img src="./vuesImages/info1.svg" alt="">
         <img src="./vuesImages/info2.svg" alt="">
@@ -18,11 +35,23 @@
 
 <script>
 import Navbar from '@/components/NavbarBox.vue'
-import Card from '@/components/Adopt/AnimalDetailCard.vue'
+import axios from 'axios'
 export default {
   components: {
     Navbar,
-    Card,
+  },
+  data(){
+    return{
+      animalId: this.$route.params.animal_id,
+      animaldetail:[]
+    }
+  },
+  mounted(){
+    axios.get(`/api/animal/${this.animalId}`)
+    .then((res) =>{ 
+      this.animaldetail= res.data[0];
+      console.log(this.animaldetail);
+      })
   },
 }
 </script>

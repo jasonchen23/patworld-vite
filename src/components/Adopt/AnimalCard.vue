@@ -25,7 +25,8 @@
             </div>
             <br>
             <div class="button" @click="goToAnimalDetail(animal_id)">
-                <router-link to="/adopt/strayAnimal/:page/:strayAnimalId" style="text-decoration:none;" class="btn btn-light">詳細資料</router-link>
+                <!-- <router-link to="/adopt/strayAnimal/:page/:strayAnimalId" style="text-decoration:none;" class="btn btn-light">詳細資料</router-link> -->
+                詳細資料
             </div>
         </div>
     </div>
@@ -54,12 +55,9 @@
     "animal_bodytype": String,
     },
     methods:{
-        // parseImgPath: function(path){
-        //     return this.serverPath + path;
-        // },
-        // redirectProduct: function(id){
-        //     this.$router.push(`/products/${id}`)
-        // }
+        goToAnimalDetail(animal_id) {
+            this.$router.push({ name: 'detail', params: { animal_id } });
+        }
     },
 
 }

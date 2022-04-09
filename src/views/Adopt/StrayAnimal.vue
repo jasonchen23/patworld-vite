@@ -145,7 +145,7 @@
   <Paginate
     v-model="page"
     :page-count="pageCount"
-    :page-range="5"
+    :page-range="10"
     :margin-pages="2"
     :prev-text="'上一頁'"
     :next-text="'下一頁'"
@@ -162,7 +162,6 @@ import Navbar from '@/components/NavbarBox.vue'
 import Card from '@/components/Adopt/AnimalCard.vue'
 import Paginate from "vuejs-paginate-next"
 import axios from 'axios';
-// import axios from 'axios'
 
 export default {
     components: {
@@ -174,7 +173,7 @@ export default {
         return {
             page: 1,
             pageCount: 0,
-            productCountPerPage: 9,
+            productCountPerPage: 12,
             data:[],
         };
     },
@@ -184,21 +183,20 @@ export default {
             console.log(res.data);
             this.sliceAnimalData(res.data);
             console.log(this.data);
+            this.pageCount = this.data.length; 
             })
-        // this.sliceAnimalData(data);
-        // this.pageCount = this.animalData.length;
     },
     watch: {
         page: {
             handler(val) {
-                this.$router.push({name: 'data', query: { page: val } });
+                this.$router.push({name: 'page', params: { page: val } });
                 console.log()
-            },
+            }, 
         },
     },
     computed: {
         pageAnimalData() {
-            return this.data[this.$route.query.page - 1 || 0]; 
+            return this.data[this.$route.params.page - 1 || 0]; 
         },
     },
     methods: {

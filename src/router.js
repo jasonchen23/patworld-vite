@@ -12,10 +12,14 @@ const routes = [
         path: "/adopt", component: () => import("./views/Adopt/AdoptPage.vue")
     },
     {
-        path: "/adopt/strayAnimal/:page", component: () => import("./views/Adopt/StrayAnimal.vue")
+        path: "/adopt/strayAnimal/:page",
+        name: "page",
+        component: () => import("./views/Adopt/StrayAnimal.vue")
     },
     {
-        path: "/adopt/strayAnimal/:page/:strayAnimalId", component: () => import("./views/Adopt/AnimalDetail.vue") ,
+        path: "/adopt/strayAnimal/:page/:animal_id",
+        name: "detail",
+        component: () => import("./views/Adopt/AnimalDetail.vue") ,
     },
     {
         path: "/donate", component: () => import("./views/Donate/DonatePage.vue"),
