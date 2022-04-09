@@ -25,7 +25,7 @@
             </div>
             <br>
             <div class="button" @click="goToAnimalDetail(animal_id)">
-                <router-link to="/adopt/strayAnimal/:strayAnimalId" style="text-decoration:none;" class="btn btn-light">詳細資料</router-link>
+                <router-link to="/adopt/strayAnimal/:page/:strayAnimalId" style="text-decoration:none;" class="btn btn-light">詳細資料</router-link>
             </div>
         </div>
     </div>
