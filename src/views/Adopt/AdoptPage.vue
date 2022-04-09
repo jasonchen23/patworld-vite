@@ -148,7 +148,7 @@ src: url("@/views/Adopt/vuesImages/Cubic_11.woff") format("woff");
 .footer{
     display: flex;
     justify-content: center;
-    margin-right: 5vw;
+    margin-right: 9vw;
 }
 .footerImg1{
     display: inline-block;

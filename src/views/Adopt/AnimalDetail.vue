@@ -22,10 +22,8 @@
     </div>
       <div class="footer d-flex align-items-end">
         <img src="./vuesImages/info1.svg" alt="">
-        <img src="./vuesImages/info2.svg" alt="">
-        <router-link to="/notice" style="text-decoration:none;">
-        <input type="button" value="我想領養！" class="adoptButton d-flex align-items-end">
-      </router-link>
+        <img src="./vuesImages/info2.svg" alt=""> 
+        <input type="button" value="我想領養！" class="adoptButton d-flex align-items-end" @click="goToAnimalFillin()">
       <img src="./vuesImages/info3.svg" alt="">
         <img src="./vuesImages/info4.svg" alt="">
       </div>
@@ -51,7 +49,12 @@ export default {
     .then((res) =>{ 
       this.animaldetail= res.data[0];
       console.log(this.animaldetail);
-      })
+      });
+  },
+  methods: {
+    goToAnimalFillin(){
+      this.$router.push({ name: 'fillin' });
+    }
   },
 }
 </script>

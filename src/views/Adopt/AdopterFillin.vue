@@ -10,21 +10,25 @@
         </div>
         <div class="inputBox">
             <form action>
-                <input type="text" name id class="form-control" placeholder="領養人姓名" />
-                <input type="tel" name id class="form-control" placeholder="聯絡電話" />
-                <input type="email" name id class="form-control" placeholder="電子郵件地址" />
-                <input type="text" name id class="form-control" placeholder="通訊地址" />
-                <input type="text" name id class="form-control" placeholder="領養人職業" />
-                <input type="text" name id class="form-control" placeholder="領養人年齡" />
+                <label>領養人姓名</label>
+                <input type="text" class="form-control" value="Andy" disabled="disabled" />
+                <label>領養人電話</label>
+                <input type="tel" class="form-control" value="0912345678" disabled="disabled" />
+                <label>領養人電子郵件</label>
+                <input type="email" class="form-control" value="1234@gmail.com" disabled="disabled" />
+                <label>領養人通訊地址</label>
+                <input type="text" class="form-control"  value="台北市大安區建國南路二段231號" disabled="disabled" />
+                <label>領養人職業</label>
+                <input type="text" class="form-control" value="學生" disabled="disabled" />
+                <label>領養人年齡</label>
+                <input type="text" class="form-control" value="22" disabled="disabled" />
                 <br />
             </form>
             <br />
         </div>
-        <router-link to="/sent" style="text-decoration:none;">
             <div>
-                <input type="button" value="送出資料" class="sentButton" />
+                <input type="submit" value="送出資料" class="sentButton" @click="goToDataSent()">
             </div>
-        </router-link>
         <div class="tree container">
             <img src="./vuesImages/tree.svg" alt />
             <img src="./vuesImages/tree.svg" alt />
@@ -35,14 +39,30 @@
 
 <script>
 import Navbar from '@/components/NavbarBox.vue'
+import axios from 'axios'
 export default {
     components: {
         Navbar,
     },
+    mounted() {
+        axios.post('/api/animal/:animalId/adopt', {userId:1})
+    },
+    methods: {
+        goToDataSent(){
+            this.$router.push({ name: 'sent' });
+    }
+    }
 }
 </script>
 
 <style scoped>
+label {
+    display: flex;
+    justify-content: start;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: 900;
+}
 .titleBox {
     margin-top: 5%;
 }

@@ -161,7 +161,7 @@
 import Navbar from '@/components/NavbarBox.vue'
 import Card from '@/components/Adopt/AnimalCard.vue'
 import Paginate from "vuejs-paginate-next"
-import axios from 'axios';
+import axios from 'axios'
 
 export default {
     components: {
