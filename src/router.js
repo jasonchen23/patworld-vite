@@ -40,7 +40,9 @@ const routes = [
         path: "/notice", component: () => import("./views/Adopt/AdoptionNotice.vue")
     },
     {
-        path: "/fillin", component: () => import("./views/Adopt/AdopterFillin.vue")
+        path: "/fillin",
+        name: "fillin",
+        component: () => import("./views/Adopt/AdopterFillin.vue")
     },
     {
         // path: "/sent", component: () => import("./views/Adopt/DataSent.vue")

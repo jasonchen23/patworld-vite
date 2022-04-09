@@ -102,9 +102,7 @@
             </ul>-->
         </div>
         <div>
-            <router-link to="/fillin" style="text-decoration:none;" @click.prevent="test()">
-                <input type="submit" id="button" value="下一步" class="nextButton" />
-            </router-link>
+            <button id="button" class="nextButton">下一步</button>
         </div>
         <div class="dog">
             <img src="./vuesImages/yesNoDOG.svg" alt />
@@ -121,20 +119,6 @@ export default {
     data() {
         return {
             allCheck: false
-        }
-    },
-    methods: {
-        test: {
-            function() {
-                $("#button").click(function () {
-                    // var allCheck = allCheck;
-                    if (toggle1 == false && toggle2 == false && toggle3 == false && toggle4 == false && toggle5 == false) {
-                        this.allCheck = true;
-                        console.log(this.allCheck);
-                        // return this.allCheck;
-                    } 
-                })
-            }
         }
     },
     mounted() {
@@ -212,34 +196,42 @@ export default {
             }
         });
 
-        // var allCheck = false;
         $("#button").click(function () {
             // var allCheck = allCheck;
+            // var allCheck = false;
             if (toggle1 == false && toggle2 == false && toggle3 == false && toggle4 == false && toggle5 == false) {
-                this.allCheck = true;
-                console.log(this.allCheck);
+                // this.allCheck = true;
+                // console.log(this.allCheck);
+                // this.$router.push({ name: 'fillin' });
                 // return this.allCheck;
-            } else {
+                // this.$router.push({ name: 'fillin' });
+                window.location.href = "/#/fillin";
+            }
+            else {
                 alert("請確認")
             }
         });
     },
-}
+    // methods: {
+    //     check: function () {
+    //         console.log(toggle1)
+    //         if (this.toggle1 == false && this.toggle2 == false && this.toggle3 == false && this.toggle4 == false && this.toggle5 == false) {
+    //             this.$router.push({ name: 'fillin' });
+    //         }else {
+    //             alert("請確認")
+    //         } 
+    //     },
+        // check() {
+        //     if (this.allCheck == true) {
+        //         this.$router.push({ name: 'fillin' });
+        //     }else {
+        //         alert("請確認")
+        //     } 
+        // },
+    // },
+};
 
 
-//       $("#button").click(function(){
-//           var allCheck = true;
-//           if ($("#yesNoText1, #yesNoText2, #yesNoText3, #yesNoText4, #yesNoText5").hasClass("no")){
-//               alert("請確認");
-//               allCheck = false;
-//               return 
-//           }else{
-//               allCheck = true;
-//               return               
-//           }
-//       });
-//   },
-// }
 </script>
 
 <style scoped>
