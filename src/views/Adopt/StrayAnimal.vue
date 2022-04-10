@@ -185,6 +185,7 @@ export default {
             console.log(this.data);
             this.pageCount = this.data.length; 
             })
+            
     },
     watch: {
         page: {
