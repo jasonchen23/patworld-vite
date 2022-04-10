@@ -42,7 +42,7 @@
 
 </template>
 
-<style>
+<style scoped>
     .button-30 {
       align-items: center;
       margin-top: auto;

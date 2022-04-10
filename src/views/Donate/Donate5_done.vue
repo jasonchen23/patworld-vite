@@ -26,7 +26,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
     @import url(http://fonts.googleapis.com/css?family=Calibri:400,300,700);
 
     body {
