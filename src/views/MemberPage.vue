@@ -37,7 +37,7 @@ export default {
       members: [
                 {
                     name: 'Jason',
-                    detail: '首頁、後端'
+                    detail: '首頁、後端',
                 },
                 {
                     name: 'Richer',

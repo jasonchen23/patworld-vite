@@ -9,11 +9,12 @@
           </div>
         </div>
     <div>
+      <a href="{{linkurl}}">
       <button class="btn btn-warning badge rounded-pill p-2">Github</button>
+      </a>
     </div>
     </div>
  </div>
-
 </template>
 
 <script>
@@ -21,8 +22,10 @@ export default {
   props:{
     name:String,
     detail:String,
+    linkurl:String,
   }
 }
+
 
 </script>
 
@@ -32,5 +35,10 @@ h2, h5{
 font-family: jf-openhuninn;
 color: #802300;
 }
+
+.flipped{
+  transform: rotateY(180deg);
+}
+
 
 </style>
