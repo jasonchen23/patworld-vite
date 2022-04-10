@@ -5,9 +5,9 @@ const routes = [
     {
         path: "", component: () => import("./views/HomePage/HomePage.vue"),
     },
-    // {
-    //     path: "/user", component: () => import("./views/User/LoginView.vue"),
-    // },
+    {
+        path: "/member", component: () => import("./views/User/LoginView.vue"),
+    },
     {
         path: "/adopt", component: () => import("./views/Adopt/AdoptPage.vue")
     },
@@ -44,7 +44,7 @@ const routes = [
         path: "/donate/done", component: () => import("./views/Donate/Donate4.vue"),
     },
     {
-        path: "/member", component: () => import("./views/MemberPage.vue"),
+        path: "/develop", component: () => import("./views/MemberPage.vue"),
     },
     {
         path: "/notice", component: () => import("./views/Adopt/AdoptionNotice.vue")

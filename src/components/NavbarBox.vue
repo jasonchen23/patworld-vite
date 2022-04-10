@@ -12,19 +12,16 @@
                     <router-link to="/" class="text-reset fw-bold">HOME</router-link>
                 </li>
                 <li class="nav-item px-1">
-                    <router-link to="/vip" class="text-reset fw-bold"><a>VIP</a></router-link>
+                    <router-link to="/member" class="text-reset fw-bold"><a>MEMBER</a></router-link>
                 </li>
                 <li class="nav-item px-1">
                     <router-link to="/adopt" class="text-reset fw-bold"><a>ADOPT</a></router-link>
                 </li>
                 <li class="nav-item px-1">
-                    <router-link to="/stray" class="text-reset fw-bold"><a>STRAY</a></router-link>
-                </li>
-                <li class="nav-item px-1">
                     <router-link to="/donate" class="text-reset fw-bold"><a>DONATE</a></router-link>
                 </li>
                 <li class="nav-item px-1">
-                    <router-link to="/member" class="text-reset fw-bold"><a>MEMBER</a></router-link>
+                    <router-link to="/develop" class="text-reset fw-bold"><a>DEVELOP</a></router-link>
                 </li>
             </ul>
     </div>

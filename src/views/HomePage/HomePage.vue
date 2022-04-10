@@ -26,13 +26,13 @@
             </router-link>
           </div>
           <div class="col pb-4 homeTooltip">
-            <router-link to="/user">
+            <router-link to="/member">
             <p class="tooltiptext">會員中心</p>
               <img src="../HomePage/img/tatemono_myhome_purple.png">
             </router-link>
           </div>
           <div class="col pb-4 homeTooltip">
-            <router-link to="/member">
+            <router-link to="/develop">
               <p class="tooltiptext">開發人員介紹</p>
               <img src="../HomePage/img/tatemono_myhome_red.png">
             </router-link>
