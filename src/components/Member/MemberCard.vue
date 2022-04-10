@@ -8,11 +8,11 @@
             <h5>{{detail}}</h5>
           </div>
         </div>
-    <div>
+    <!-- <div>
       <a href="{{linkurl}}">
       <button class="btn btn-warning badge rounded-pill p-2">Github</button>
       </a>
-    </div>
+    </div> -->
     </div>
  </div>
 </template>
