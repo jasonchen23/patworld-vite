@@ -1,5 +1,5 @@
 <template>
-  <!-- </Navbar> -->
+  <Navbar />
   <div class="background">
     <div class="container">
       <div class="row">
@@ -10,21 +10,21 @@
                 <div class="row mb-3 mt-4">
                   <label for="inputName" class="col-sm-2 col-form-label">捐贈人姓名</label>
                   <div class="col-sm-10">
-                    <input type="text" class="form-control" id="inputName" placeholder="自動填入" aria-label="readonly input example" readonly>
+                    <input type="text" class="form-control" id="inputName" placeholder="必填">
                   </div>
                 </div>
                 <div class="row mb-3">
                   <label for="inputPhone" class="col-sm-2 col-form-label">電話號碼</label>
                   <div class="col-sm-10">
-                    <input type="text" class="form-control" id="inputPhone" placeholder="自動填入" aria-label="readonly input example" readonly>
+                    <input type="text" class="form-control" id="inputPhone" placeholder="必填">
                   </div>
                 </div>
                 <div class="row mb-3">
                   <label for="inputEmail" class="col-sm-2 col-form-label">電子郵件</label>
                   <div class="col-sm-10">
-                    <input type="text" class="form-control" id="inputEmail" placeholder="自動填入" aria-label="readonly input example" readonly>
-                    </div>
+                    <input type="text" class="form-control" id="inputEmail" placeholder="必填">
                   </div>
+                </div>
                 <div class="row mb-3">
                   <label for="inputEmail" class="col-sm-2 col-form-label">捐贈機構</label>
                   <div class="col-sm-10">
@@ -40,41 +40,46 @@
                         <option>公館葉媽媽狗園</option>
                         <option>虎頭山之愛狗園</option>
                     </select>
-                    </div>
                   </div>
+                </div>
                 <div class="row mb-3">
-                <label for="inputEmail" class="col-sm-2 col-form-label">付款方式</label>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="creditcard" value="option1">
-                  <label class="form-check-label" for="inlineRadio1">信用卡</label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="linepay" value="option2">
-                  <label class="form-check-label" for="inlineRadio2">Line pay</label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="transfer" value="option3">
-                  <label class="form-check-label" for="inlineRadio3">轉帳</label>
-                </div>
+                  <label for="inputEmail" class="col-sm-2 col-form-label">付款方式</label>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="creditcard" value="option1">
+                    <label class="form-check-label" for="inlineRadio1">信用卡</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="linepay" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">Line pay</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="transfer" value="option3">
+                    <label class="form-check-label" for="inlineRadio3">轉帳</label>
+                  </div>
                 </div>
                 <br>
-                <button class="button-30" role="button" >下一步</button>
+
+                <router-link to="/donate/done">
+                  <button class="button-30" type="button">送出</button>
+                </router-link>
+                <router-view></router-view>
+
               </form>
             </div>
           </div>
         </div>
+      </div>
     </div>
-  </div>
 
 </template>
 
 <script>
-// import Navbar from '@/components/NavbarBox.vue'
-// export default {
-//   components: {
-//     Navbar,
-//   },
-// }
+import Navbar from '@/components/NavbarBox.vue'
+export default {
+  components: {
+    Navbar,
+  },
+}
 
 </script>
 
