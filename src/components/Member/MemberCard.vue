@@ -1,11 +1,18 @@
 <template>
- <div class="col mx-1 ">
-    <div class="card px-1 shadow-sm d-flex justify-center h-100">
-        <img src="https://th.bing.com/th/id/OIP.d_VB81EP_EoX_lisrAT_JQHaHa?pid=ImgDet&rs=1" alt="" class="card-img-top">
-        <div class="container text-center">
-          <h2 class="fw-bold">{{name}}</h2>
-          <h5>{{detail}}</h5>
+ <div class="col mx-1">
+    <div class="p-3 card shadow-sm d-flex justify-center h-100 border border-2 border-warning">
+        <div class="col h-100">
+          <img src="https://th.bing.com/th/id/OIP.d_VB81EP_EoX_lisrAT_JQHaHa?pid=ImgDet&rs=1" class="p-2 card-img-top  rounded-circle">
+          <div class="container text-center">
+            <h2 class="fw-bold">{{name}}</h2>
+            <h5>{{detail}}</h5>
+          </div>
         </div>
+    <!-- <div>
+      <a href="{{linkurl}}">
+      <button class="btn btn-warning badge rounded-pill p-2">Github</button>
+      </a>
+    </div> -->
     </div>
  </div>
 </template>
@@ -15,8 +22,11 @@ export default {
   props:{
     name:String,
     detail:String,
+    linkurl:String,
   }
 }
+
+
 </script>
 
 <style>
@@ -25,5 +35,10 @@ h2, h5{
 font-family: jf-openhuninn;
 color: #802300;
 }
+
+.flipped{
+  transform: rotateY(180deg);
+}
+
 
 </style>

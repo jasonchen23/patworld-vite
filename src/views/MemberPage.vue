@@ -1,11 +1,21 @@
 <template>
-  <Navbar />
-    <div class="row row-cols-1 row-cols-md-6 g-4 d-flex justify-content-center pt-5">
-        <template v-for="member in members" :key="member">
-          <MemberCard v-bind="member" />
-        </template>
+    <div class="container-fluid">
+      <div class="row vh-100">
+        <div class="row align-items-start">
+          <Navbar class="col" />
+        </div>
+          <div class="row align-items-center">
+            <div class="row row-cols-1 row-cols-md-6 g-4 justify-content-center">
+              <template v-for="member in members" :key="member">
+                <MemberCard v-bind="member"  />
+              </template>
+            </div>
+          </div>
+        <div class="row align-items-end">
+          <Footer class="col"/>
+        </div>
+      </div>
     </div>
-  <Footer class="mt-5 pt-3"/>
 </template>
 
 
@@ -27,7 +37,7 @@ export default {
       members: [
                 {
                     name: 'Jason',
-                    detail: '首頁、後端'
+                    detail: '首頁、後端',
                 },
                 {
                     name: 'Richer',
@@ -52,13 +62,11 @@ export default {
 };
 </script>
 
-<style>
-body {
-    background: rgba(255, 250, 244, 1);
-}
+<style  scoped>
+
 
 body {
-  background: #FEFAE5;
+  background: #fcfcfd;
   font-family: jf-openhuninn;
   color: #802300;
 }
