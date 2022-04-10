@@ -205,7 +205,7 @@ export default {
                 // this.$router.push({ name: 'fillin' });
                 // return this.allCheck;
                 // this.$router.push({ name: 'fillin' });
-                window.location.href = "/#/fillin";
+                this.$router.push({ name: 'fillin' });
             }
             else {
                 alert("請確認")
