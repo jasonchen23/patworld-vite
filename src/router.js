@@ -22,12 +22,17 @@ const routes = [
         component: () => import("./views/Adopt/AnimalDetail.vue") ,
     },
     {
-        path: "/adopt/strayAnimal/:page/:animal_id/fillin",
+        path: "/adopt/strayAnimal/:page/:animal_id/notice", 
+        name: "notice",
+        component: () => import("./views/Adopt/AdoptionNotice.vue"),
+    },
+    {
+        path: "/adopt/strayAnimal/:page/:animal_id/notice/fillin",
         name: "fillin",
         component: () => import("./views/Adopt/AdopterFillin.vue")
     },
     {
-        path: "/adopt/strayAnimal/:page/:animal_id/fillin/sent",
+        path: "/adopt/strayAnimal/:page/:animal_id/notice/fillin/sent",
         name: "sent",
         component: () => import("./views/Adopt/DataSent.vue")
     },

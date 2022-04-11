@@ -205,7 +205,7 @@ export default {
                 // this.$router.push({ name: 'fillin' });
                 // return this.allCheck;
                 // this.$router.push({ name: 'fillin' });
-                window.location.href = "/#/fillin";
+                window.location.href = "/#/adopt/strayAnimal/527/247442/notice/fillin";
             }
             else {
                 alert("請確認")

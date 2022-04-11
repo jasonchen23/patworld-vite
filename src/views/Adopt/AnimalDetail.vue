@@ -53,7 +53,7 @@ export default {
   },
   methods: {
     goToAnimalFillin(){
-      this.$router.push({ name: 'fillin' });
+      this.$router.push({ name: 'notice' });
     }
   },
 }
