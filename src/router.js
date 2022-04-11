@@ -5,9 +5,9 @@ const routes = [
     {
         path: "", component: () => import("./views/HomePage/HomePage.vue"),
     },
-    {
-        path: "/member", component: () => import("./views/User/LoginView.vue"),
-    },
+    // {
+    //     path: "/member", component: () => import("./views/User/LoginView.vue"),
+    // },
     {
         path: "/adopt", component: () => import("./views/Adopt/AdoptPage.vue")
     },

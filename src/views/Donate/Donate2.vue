@@ -109,7 +109,7 @@ methods:{
 
 </script>
 
-<style>
+<style scoped>
 .product {
     display: flex;
     justify-content: center;

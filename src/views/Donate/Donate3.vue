@@ -83,7 +83,7 @@ export default {
 
 </script>
 
-<style>
+<style scoped>
 .background {
     height: 100vh;
     background-color: rgb(134, 155, 100);
