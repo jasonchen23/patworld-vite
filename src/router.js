@@ -5,9 +5,15 @@ const routes = [
     {
         path: "", component: () => import("./views/HomePage/HomePage.vue"),
     },
-    // {
-    //     path: "/member", component: () => import("./views/User/LoginView.vue"),
-    // },
+    {
+        path: "/test", component: () => import("./views/HomePage/TestPage.vue"),
+    },
+    {
+        path: "/member", component: () => import("./views/User/LoginView.vue"),
+    },
+    {
+        path: "/member/center", component: () => import("./views/User/UserView.vue")
+    },
     {
         path: "/adopt", component: () => import("./views/Adopt/AdoptPage.vue")
     },

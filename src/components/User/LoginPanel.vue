@@ -58,9 +58,9 @@ export default {
         })
         .then((response) => {
           this.$store.dispatch('setLogin', response.data.data.userName);
+          console.log("login success")
           //導回上一頁
-          if (this.prevPath) this.$router.push({ path: this.prevPath });
-          else this.$router.push({ name: 'products' });
+          this.$router.push({ path: '/member/center' });
         })
         .catch((error) => {
           if (error.response && error.response.status === 400) {

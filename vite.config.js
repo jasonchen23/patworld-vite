@@ -16,7 +16,7 @@ export default defineConfig({
       '/foo': 'http://localhost:4567',
       // 选项写法
       '/api': {
-        target: 'https://jasonchen23.herokuapp.com/',
+        target: 'http://localhost:3000',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, '')
       },

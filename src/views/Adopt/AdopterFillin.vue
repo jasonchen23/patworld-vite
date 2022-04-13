@@ -44,8 +44,13 @@ export default {
     components: {
         Navbar,
     },
+    data(){
+        return {
+            animalId: this.$route.params.animal_id,
+        }
+    },
     mounted() {
-        axios.post('/api/animal/:animalId/adopt', {userId:1})
+        this.$axios.post(`/api/animal/${this.animalId}/adopt`, {userId:6})
     },
     methods: {
         goToDataSent(){
