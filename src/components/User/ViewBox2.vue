@@ -28,11 +28,11 @@
         </div> -->
         <div class="contain">
             <div class="row">
-                <div class="col">{{dog}}</div>
-                <div class="col">{{puppy}}</div>
-                                <div class="col">{{cat}}</div>
-                                                <div class="col">{{kitty}}</div>
-                                                                <div class="col">{{shelter}}</div>
+                <div class="col-2">{{dog}}</div>
+                <div class="col-2">{{puppy}}</div>
+                                <div class="col-2">{{cat}}</div>
+                                                <div class="col-2">{{kitty}}</div>
+                                                                <div class="col-4">{{shelter}}</div>
             </div>
         </div>
 </template>

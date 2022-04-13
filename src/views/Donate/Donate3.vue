@@ -10,11 +10,7 @@
                 <div class="row mb-3 mt-4">
                   <label for="inputName" class="col-sm-2 col-form-label">捐贈人姓名</label>
                   <div class="col-sm-10">
-<<<<<<< HEAD
-                    <input type="text" class="form-control" id="inputName" placeholder="必填" :value="" >
-=======
                     <input type="text" class="form-control" id="inputName" placeholder="必填" aria-label="readonly input example" readonly>
->>>>>>> origin/kari
                   </div>
                 </div>
                 <div class="row mb-3">

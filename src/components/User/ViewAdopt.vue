@@ -2,19 +2,25 @@
   <div class="pt-4 text-center">
    <span> 領養紀錄 </span>
   </div>
+  <hr>
+  <div class="container">
+    <div class="row">
+      <div class="col">領養編號</div>
+      <div class="col">寵物編號</div>
+    </div>
     <div v-for="adopt in adopts" :key="adopt">
         <ViewBox v-bind="adopt" />
     </div>
+  </div>
 </template>
 
 <script>
 
-import GoogleBtn from '@/components/User/GoogleBtn.vue';
+
 import ViewBox from '@/components/User/ViewBox.vue';
 // import DonateBox from '@/components/Donate/D'
 export default {
   components: {
-    GoogleBtn,
     ViewBox
   },
   data() {

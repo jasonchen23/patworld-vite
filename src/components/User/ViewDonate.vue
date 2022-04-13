@@ -2,8 +2,18 @@
   <div class="pt-4 text-center">
    <span> 捐贈紀錄 </span>
   </div>
-    <div v-for="donate in donates" :key="donate">
-      <ViewBox2 v-bind="donate" />
+    <hr>
+    <div class="container box">
+      <div class="row">
+        <div class="col-2">成犬飼料</div>
+        <div class="col-2">幼犬飼料</div>
+        <div class="col-2">成貓飼料</div>
+        <div class="col-2">幼貓飼料</div>
+        <div class="col-4">收容所</div>
+      </div>
+      <div v-for="donate in donates" :key="donate">
+        <ViewBox2 v-bind="donate" />
+      </div>
     </div>
 </template>
 
@@ -57,4 +67,8 @@ button {
   font-weight: bold;
   background-image: linear-gradient(to right, rgb(1 134 218), rgb(182 49 167));
 }
+.box{
+  width: 200px;
+}
+
 </style>

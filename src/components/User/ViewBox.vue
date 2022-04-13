@@ -28,8 +28,8 @@
         </div> -->
         <div class="contain">
             <div class="row">
-                <div class="col">{{animal_id}}</div>
                 <div class="col">{{adopt_id}}</div>
+                <div class="col">{{animal_id}}</div>
             </div>
         </div>
 </template>

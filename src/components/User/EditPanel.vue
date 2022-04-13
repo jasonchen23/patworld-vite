@@ -63,7 +63,7 @@ export default {
     data() {
         return {
             // password: '',
-            account: '',
+            account: this.$store.state.userId,
             phone:'',
             email:'',
             address:'',
@@ -86,7 +86,7 @@ export default {
         onSubmit(values) {
             this.$axios
                 .post('/api/users/update', {
-                    account: values.account,
+                    userId: values.account,
                     email: values.email,
                     phone: values.phone,
                     address: values.address,

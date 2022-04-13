@@ -89,7 +89,7 @@ button.active {
     border-bottom: none;
 }
 .panel {
-    max-width: 500px;
+    /* max-width: 500px; */
     border-radius: 0px 0px 10px 10px;
     background-color: rgba(255, 255, 255, 0.701);
     box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.5);
