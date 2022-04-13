@@ -4,35 +4,37 @@
         <div></div>
         <h1 class="pt-5 fw-bold display-1">Pet World</h1>
         <div class="d-flex align-content-end flex-wrap">
-          <div>
-            <img src="" alt="">
-          </div>
           <div class="col pb-4 homeTooltip">
             <router-link to="/">
+              <p class="d-block d-sm-block d-md-block d-xl-none">首頁</p>
               <p class="tooltiptext">首頁</p>
               <img src="../HomePage/img/tatemono_myhome.png">
             </router-link>
           </div>
           <div class="col pb-4 homeTooltip">
             <router-link to="/adopt">
+              <p class="d-block d-sm-block d-md-block d-xl-none">領養寵物</p>
               <p class="tooltiptext">領養寵物</p>
               <img src="../HomePage/img/tatemono_myhome_gren.png">
             </router-link>
           </div>
           <div class="col pb-4 homeTooltip">
             <router-link to="/donate">
+              <p class="d-block d-sm-block d-md-block d-xl-none">捐贈飼料</p>
               <p class="tooltiptext">捐贈飼料</p>
               <img src="../HomePage/img/tatemono_myhome_orange.png">
             </router-link>
           </div>
           <div class="col pb-4 homeTooltip">
             <router-link to="/member">
+            <p class="d-block d-sm-block d-md-block d-xl-none">會員中心</p>
             <p class="tooltiptext">會員中心</p>
               <img src="../HomePage/img/tatemono_myhome_purple.png">
             </router-link>
           </div>
           <div class="col pb-4 homeTooltip">
             <router-link to="/develop">
+              <p class="d-block d-sm-block d-md-block d-xl-none">開發人員介紹</p>
               <p class="tooltiptext">開發人員介紹</p>
               <img src="../HomePage/img/tatemono_myhome_red.png">
             </router-link>
@@ -57,6 +59,7 @@
   background-position: center;
   background-repeat: repeat-x;
   background-size: cover;
+  background-position: left bottom;
 }
 
 img{

@@ -41,12 +41,12 @@ export default {
                     detail: '首頁、後端',
                     url: 'https://github.com/jasonchen23',
                 },
-                {
-                    src: 'src/views/Member/img/img_Richer.png',
-                    name: 'Richer',
-                    detail: '會員中心、登入註冊頁面',
-                    url: 'https://github.com/Richeryuan',
-                },
+                // {
+                //     src: 'src/views/Member/img/img_Richer.png',
+                //     name: 'Richer',
+                //     detail: '會員中心、登入註冊頁面',
+                //     url: 'https://github.com/Richeryuan',
+                // },
                 {
                     src: 'src/views/Member/img/img_Kari.png',
                     name: 'Kari',

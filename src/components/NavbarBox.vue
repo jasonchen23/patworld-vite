@@ -1,7 +1,7 @@
 <template>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <a><img src="../assets/icon/logo.png" ></a>
+    <a><img src="../assets/icon/petWorldLogo.png" ></a>
     <span class="fw-bold mx-3">PetWorld</span>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
