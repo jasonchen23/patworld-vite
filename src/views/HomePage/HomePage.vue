@@ -5,7 +5,7 @@
         <h1 class="pt-5 fw-bold display-1">Pet World</h1>
         <div class="d-flex align-content-end flex-wrap">
           <div class="col pb-4 homeTooltip">
-            <router-link to="/">
+            <router-link to="/3dindex">
               <p class="d-block d-sm-block d-md-block d-xl-none">首頁</p>
               <p class="tooltiptext">首頁</p>
               <img src="../HomePage/img/tatemono_myhome.png">

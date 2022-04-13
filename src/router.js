@@ -6,26 +6,21 @@ const routes = [
         path: "", component: () => import("./views/HomePage/HomePage.vue"),
     },
     {
-<<<<<<< HEAD
-        path: "/test", component: () => import("./views/HomePage/TestPage.vue"),
+        path: "/3dindex", component: () => import("./views/HomePage/HomePage3D.vue"),
     },
     {
         path: "/member", component: () => import("./views/User/LoginView.vue"),
     },
     {
         path: "/member/center", component: () => import("./views/User/UserView.vue")
-=======
-        path: "/user", component: () => import("./views/User/LoginView.vue"),
->>>>>>> origin/amy
     },
     {
         path: "/adopt", component: () => import("./views/Adopt/AdoptPage.vue")
     },
     {
-        path: "/adopt/strayAnimal", component: () => import("./views/Adopt/StrayAnimal.vue")
+        path: "/adopt/strayAnimal/:page", component: () => import("./views/Adopt/StrayAnimal.vue")
     },
     {
-<<<<<<< HEAD
         path: "/adopt/strayAnimal/:page/:animal_id",
         name: "detail",
         component: () => import("./views/Adopt/AnimalDetail.vue") ,
@@ -44,9 +39,6 @@ const routes = [
         path: "/adopt/strayAnimal/:page/:animal_id/notice/fillin/sent",
         name: "sent",
         component: () => import("./views/Adopt/DataSent.vue")
-=======
-        path: "/adopt/strayAnimal/:strayAnimalId", component: () => import("./views/Adopt/AnimalDetail.vue") ,
->>>>>>> origin/amy
     },
     {
         path: "/donate", component: () => import("./views/Donate/DonatePage.vue"),
