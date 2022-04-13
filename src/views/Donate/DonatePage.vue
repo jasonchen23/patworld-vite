@@ -41,7 +41,7 @@
 <router-view></router-view>
 </template>
 
-<script>
+<script scoped>
 import Navbar from '@/components/NavbarBox.vue'
 import button from '@/components/button.vue'
 
@@ -57,7 +57,7 @@ export default {
 
 </script>
 
-<style scoped>
+<style>
 
 body{
       margin-top:50px;

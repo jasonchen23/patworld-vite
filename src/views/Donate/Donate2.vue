@@ -4,7 +4,7 @@
     <div class="title mt-5">
       <h2><strong>選擇捐贈項目</strong></h2>
     </div>
-    <div class="row">
+    <div class="row d-md-flex">
       <div class="product mt-3">
       <template v-for="item in items" :key="item">
       <Product v-bind="item" />
@@ -96,14 +96,6 @@ computed: {
   }
 },
 methods:{
-  //  total: function(){
-  //     var sum = 0;
-  //     this.cartitems.map(function(cartitem){
-  //       console.log(cartitem);
-  //           sum += parseInt(cartitem.total);
-  //     });
-  //     return sum;
-  //   }
 }}
   
 
