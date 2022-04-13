@@ -20,7 +20,7 @@
                 ~敬請耐心等待，謝謝您~
             </p>
             <div class="button">
-                <router-link to="/adopt/strayAnimal/1" style="text-decoration:none;">
+                <router-link to="/" style="text-decoration:none;">
                     <input type="button" value="回到首頁" class="goBackButton" />
             </router-link>
             </div>
