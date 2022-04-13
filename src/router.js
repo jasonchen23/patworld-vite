@@ -6,6 +6,7 @@ const routes = [
         path: "", component: () => import("./views/HomePage/HomePage.vue"),
     },
     {
+<<<<<<< HEAD
         path: "/test", component: () => import("./views/HomePage/TestPage.vue"),
     },
     {
@@ -13,16 +14,18 @@ const routes = [
     },
     {
         path: "/member/center", component: () => import("./views/User/UserView.vue")
+=======
+        path: "/user", component: () => import("./views/User/LoginView.vue"),
+>>>>>>> origin/amy
     },
     {
         path: "/adopt", component: () => import("./views/Adopt/AdoptPage.vue")
     },
     {
-        path: "/adopt/strayAnimal/:page",
-        name: "page",
-        component: () => import("./views/Adopt/StrayAnimal.vue")
+        path: "/adopt/strayAnimal", component: () => import("./views/Adopt/StrayAnimal.vue")
     },
     {
+<<<<<<< HEAD
         path: "/adopt/strayAnimal/:page/:animal_id",
         name: "detail",
         component: () => import("./views/Adopt/AnimalDetail.vue") ,
@@ -41,6 +44,9 @@ const routes = [
         path: "/adopt/strayAnimal/:page/:animal_id/notice/fillin/sent",
         name: "sent",
         component: () => import("./views/Adopt/DataSent.vue")
+=======
+        path: "/adopt/strayAnimal/:strayAnimalId", component: () => import("./views/Adopt/AnimalDetail.vue") ,
+>>>>>>> origin/amy
     },
     {
         path: "/donate", component: () => import("./views/Donate/DonatePage.vue"),
@@ -55,10 +61,16 @@ const routes = [
         path: "/donate/done", component: () => import("./views/Donate/Donate4.vue"),
     },
     {
-        path: "/develop", component: () => import("./views/MemberPage.vue"),
+        path: "/develop", component: () => import("./views/Member/MemberPage.vue"),
     },
     {
         path: "/notice", component: () => import("./views/Adopt/AdoptionNotice.vue")
+    },
+    {
+        path: "/fillin", component: () => import("./views/Adopt/AdopterFillin.vue")
+    },
+    {
+        // path: "/sent", component: () => import("./views/Adopt/DataSent.vue")
     },
     
     

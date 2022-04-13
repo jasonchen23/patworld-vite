@@ -36,24 +36,34 @@ export default {
     return {
       members: [
                 {
+                    src: 'src/views/Member/img/img_Jason.jpg',
                     name: 'Jason',
                     detail: '首頁、後端',
+                    url: 'https://github.com/jasonchen23',
                 },
+                // {
+                //     src: 'src/views/Member/img/img_Richer.png',
+                //     name: 'Richer',
+                //     detail: '會員中心、登入註冊頁面',
+                //     url: 'https://github.com/Richeryuan',
+                // },
                 {
-                    name: 'Richer',
-                    detail: '會員中心、登入註冊頁面'
-                },
-                {
+                    src: 'src/views/Member/img/img_Kari.png',
                     name: 'Kari',
-                    detail: 'PM、飼料捐贈頁面'
+                    detail: 'PM、飼料捐贈頁面',
+                    url: 'https://github.com/rayrayfan',
                 },
                 {
+                    src: 'src/views/Member/img/img_Andy.png',
                     name: 'Andy',
-                    detail: '動物領養頁面'
+                    detail: '動物領養頁面',
+                    url: 'https://github.com/HsuBoCheng',
                 },
                 {
+                    src: 'src/views/Member/img/img_Amy.png',
                     name: 'Amy',
-                    detail: 'UI介面素材、首頁、開發人員頁面'
+                    detail: 'UI介面素材、首頁、開發人員頁面',
+                    url: 'https://github.com/zh1x277',
                 },
       ]
     }
