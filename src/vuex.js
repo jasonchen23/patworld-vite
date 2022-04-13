@@ -4,7 +4,8 @@ export default createStore({
     state:{ 
         cart:[],
         userId:[],
-        isLogin: false
+        isLogin: false,
+        amount:[]
     },
     mutations: {
       //登入狀態
@@ -36,17 +37,18 @@ export default createStore({
                   total:data[2]*1,
                 };
                 state.cart.push(newProduct);
+                state.cart.map(item=> state.amount.push(item.amount));
               } 
-        },
-        removeCart(state,data) {
-          const product = state.cart.find(
-              (item) => item.id === data[1]
-            );
-            if (product){ 
-              // 移除商品
-              product.remove(product)
-            }
-      },
+        },removeCart(state,data) {
+          // const product = state.cart.find(
+          //     (item) => item.id === data
+          //   );
+          //   console.log(product);
+          console.log(data);
+          state.cart.splice(state.cart.findIndex(v => v.id === data), 1);
+            // state.cart.filter(item => (item.id !== data));
+            console.log(state.cart)
+            } 
     },
     actions: {
       async setLogin({commit, dispatch}, userId){
@@ -58,11 +60,8 @@ export default createStore({
       async addCart( {commit} ,data) {
             commit('addCart', data)
         },
-      async removeCart( {commit}, data){
-            commit ('removeCart', data)
-      }
+      removeCart( {commit},data){
+        commit('removeCart', data)
     },
-    // plugins: [
-    //   createPersistedState({ paths: ['cart','userId'] })
-    // ]
+    }
 }) 
