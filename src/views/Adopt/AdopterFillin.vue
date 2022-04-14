@@ -11,13 +11,13 @@
         <div class="inputBox">
             <form action>
                 <label>領養人姓名</label>
-                <input type="text" class="form-control" value="Andy" disabled="disabled" />
+                <input type="text" class="form-control" value="Jimmy" disabled="disabled" />
                 <label>領養人電話</label>
                 <input type="tel" class="form-control" value="0912345678" disabled="disabled" />
                 <label>領養人電子郵件</label>
-                <input type="email" class="form-control" value="1234@gmail.com" disabled="disabled" />
+                <input type="email" class="form-control" value="test@example.com" disabled="disabled" />
                 <label>領養人通訊地址</label>
-                <input type="text" class="form-control"  value="台北市大安區建國南路二段231號" disabled="disabled" />
+                <input type="text" class="form-control"  value="test" disabled="disabled" />
                 <label>領養人職業</label>
                 <input type="text" class="form-control" value="學生" disabled="disabled" />
                 <label>領養人年齡</label>
@@ -39,7 +39,7 @@
 
 <script>
 import Navbar from '@/components/NavbarBox.vue'
-import axios from 'axios'
+// import axios from 'axios'
 export default {
     components: {
         Navbar,
@@ -47,14 +47,20 @@ export default {
     data(){
         return {
             animalId: this.$route.params.animal_id,
+            userId:this.$store.state.userId
         }
     },
     mounted() {
-        this.$axios.post(`/api/animal/${this.animalId}/adopt`, {userId:6})
+        console.log(this.userId)
     },
     methods: {
         goToDataSent(){
-            this.$router.push({ name: 'sent' });
+            this.$axios.post(`/api/animal/${this.animalId}/adopt`, {userId:this.userId})
+        .then(response => {
+                                this.$swal('領養成功');
+                                            this.$router.push({ name: 'sent' });
+        })
+
     }
     }
 }

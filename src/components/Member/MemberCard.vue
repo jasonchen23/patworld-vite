@@ -32,7 +32,7 @@ export default {
 
 </script>
 
-<style>
+<style scoped>
 
 h2, h5{
 font-family: jf-openhuninn;

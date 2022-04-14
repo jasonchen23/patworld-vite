@@ -1,14 +1,18 @@
 <template>
+  <button>
     <a href='{{link}}' class="button-30 mt-3" role="button">{{text}}</a>
+  </button>
 </template>
 
 <script>
 export default {
-
+    props:{
+      test:String,
+    }
 }
 </script>
 
-<style>
+<style scoped>
 .button-30 {
     align-items: center;
     appearance: none;
