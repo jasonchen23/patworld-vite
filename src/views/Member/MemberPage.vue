@@ -4,15 +4,15 @@
         <div class="row align-items-start">
           <Navbar class="col" />
         </div>
-          <div class="row align-items-center">
-            <div class="row row-cols-1 row-cols-md-6 g-4 justify-content-center">
+          <div class="row align-items-center p-5">
+            <div class="row justify-content-center row-cols-1 row-cols-md-6">
               <template v-for="member in members" :key="member">
                 <MemberCard v-bind="member"  />
               </template>
             </div>
           </div>
         <div class="row align-items-end">
-          <Footer class="col"/>
+          <Footer class="pt-5 col"/>
         </div>
       </div>
     </div>
@@ -38,7 +38,9 @@ export default {
                 {
                     src: 'src/views/Member/img/img_Jason.jpg',
                     name: 'Jason',
-                    detail: '首頁、後端',
+                    detail_frontend: '3D首頁開發、會員系統',
+                    detail_backend: '資料庫建置、API開發、架設AP&DB SERVER',
+                    detail: '專案版本控管與整合、繪製服務流程圖&網路架構圖',
                     url: 'https://github.com/jasonchen23',
                 },
                 // {
@@ -50,19 +52,25 @@ export default {
                 {
                     src: 'src/views/Member/img/img_Kari.png',
                     name: 'Kari',
-                    detail: 'PM、飼料捐贈頁面',
+                    detail_frontend: '飼料捐贈系統、API串接',
+                    // detail_backend: '捐贈系統API串接',
+                    detail: 'PM、wireframe、測試報告書、PPT整合、資料蒐集',
                     url: 'https://github.com/rayrayfan',
                 },
                 {
                     src: 'src/views/Member/img/img_Andy.png',
                     name: 'Andy',
-                    detail: '動物領養頁面',
+                    detail_frontend: '動物領養系統、API串接',
+                    // detail_backend: '領養系統API串接',
+                    detail: '企劃書撰寫、測試報告書撰寫、資料蒐集',
                     url: 'https://github.com/HsuBoCheng',
                 },
                 {
                     src: 'src/views/Member/img/img_Amy.png',
                     name: 'Amy',
-                    detail: 'UI介面素材、首頁、開發人員頁面',
+                    detail_frontend: '首頁、開發人員、CSS整合',
+                    // detail_backend: 'API串接',
+                    detail: 'UI素材製作、資料蒐集、文案撰寫',
                     url: 'https://github.com/zh1x277',
                 },
       ]

@@ -10,7 +10,7 @@
             </button>
         </div>
         <div class="row pb-5">
-            <div class="col-12 mx-auto panel">
+            <div class="col-12 m-auto panel">
                 <component :is="currentPanel" />
             </div>
         </div>

@@ -14,7 +14,7 @@
             </button>
         </div>
         <div class="row pb-5 pt-5">
-            <div class="col-12 mx-auto panel" style="border-radius:10px;">
+            <div class="col-12 m-auto panel" style="border-radius:10px;">
                 <component :is="currentPanel" />
             </div>
         </div>

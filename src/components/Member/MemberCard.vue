@@ -1,14 +1,21 @@
 <template>
- <div class="col mx-1">
-    <div class="member-bg p-3 card shadow-sm d-flex justify-center h-100 border border-2 border-warning">
-        <div class="col h-100">
-          <img v-bind:src="src" class="p-2 card-img-top rounded-circle border border-warning"/>
-          <div class="container text-center">
+ <div class="col">
+    <div class="card member-bg p-2  shadow-sm  h-100 border border-2 border-warning">
+        <div class="h-100 p-2">
+          <img v-bind:src="src" class=" card-img-top rounded-circle border border-warning"/>
+          <div>
             <h2 class="fw-bold">{{name}}</h2>
-            <h5>{{detail}}</h5>
+            <hr />
+            <p class="fw-bold">前端</p>
+            <p>{{detail_frontend}}</p>
+            <p v-if="detail_backend"  class="fw-bold">後端</p>
+            <P>{{detail_backend}}</P>
+            <p class="fw-bold">其他</p>
+            <P>{{detail}}</P>
           </div>
         </div>
     <div>
+      <hr />
       <a v-bind:href="url">
       <button class="btn btn-warning badge rounded-pill p-2">Github</button>
       </a>
@@ -21,6 +28,8 @@
 export default {
   props:{
     name:String,
+    detail_frontend:String,
+    detail_backend:String,
     detail:String,
     url:String,
     src:String,
@@ -34,7 +43,7 @@ export default {
 
 <style>
 
-h2, h5{
+h2, h5, p , hr{
 font-family: jf-openhuninn;
 color: #802300;
 }
@@ -45,7 +54,7 @@ color: #802300;
 
 .member-bg{
   background-image: url('../../assets/member/member_box_bg.jpg');
-  background-repeat:no-repeat;
+  background-repeat:repeat;
   background-position:right bottom;
   background-size: contain;
 }

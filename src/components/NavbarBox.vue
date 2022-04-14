@@ -25,6 +25,13 @@
                 </li>
             </ul>
     </div>
+    <div>
+        <li>
+            <router-link to="/member" class="text-reset fw-bold">
+                <img src="../assets/icon/user.svg" alt="">
+            </router-link>
+        </li>
+    </div>
   </div>
 </nav>
 
@@ -48,4 +55,5 @@ export default {
     text-decoration:none;
     font-family: jf-openhuninn;
     }
+
 </style>
