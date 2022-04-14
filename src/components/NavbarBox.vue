@@ -26,7 +26,10 @@
             </ul>
 
             <div>
-                <router-link to="/member">
+                <router-link to="/member/center" v-if="isLogin == true">
+                    <img src="../assets/icon/user.svg" style="width: 30px; height: 24px;"/>
+                </router-link>
+                <router-link to="/member" v-if="isLogin == false">
                     <img src="../assets/icon/user.svg" style="width: 30px; height: 24px;"/>
                 </router-link>
             </div>
@@ -38,6 +41,10 @@
 
 <script>
 export default {
+
+data(){
+    isLogin:this.$store.state.isLogin
+}
 
 }
 </script>
