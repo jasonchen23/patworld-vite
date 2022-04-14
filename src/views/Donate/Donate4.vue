@@ -1,6 +1,6 @@
 <template>
 
-    <div class="container d-flex jusity-content-center">
+    <div class="container d-flex justify-content-center">
           <div class="card">
             <div class="cat"> 
               <img src="src\views\Donate\DonateImages\ojigi_animal_neko.png" width="200" height="200" class="img-fluid">
@@ -26,7 +26,7 @@ export default {
 
 <style scoped>
     .card {
-        justify-content: center;
+        /* justify-content: center; */
         width: 800px;
         height: 500px;
         margin-top: 50px;
