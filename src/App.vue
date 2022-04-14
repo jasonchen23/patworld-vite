@@ -15,7 +15,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #802300;
+  font-family: jf-openhuninn;
   margin-top: 60px;
   margin:0;
   padding:0;

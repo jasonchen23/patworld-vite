@@ -1,6 +1,6 @@
 <template>
     <div class="typesetting">
-        <div class="card text-white bg-success" style="width: 25rem;">
+        <div class="card bg-light border border-warning" style="width: 25rem;">
         <img v-bind:src="album_file" class="card-img-top animalImg" alt="..." />
         <div class="card-body">
             <h5 v-bind:id="animalId" class="card-title">{{animalId}}</h5>
@@ -73,13 +73,13 @@
     background-color: #fcfcfd;
     border-radius: 4px;
     border-width: 0;
-    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
-        rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 3px,
+        rgba(45, 35, 66, 0.3) 0 0px 3px -3px, #d6d6e7 0 -3px 0 inset;
     box-sizing: border-box;
-    color: #36395a;
+    color: #802300ff;
     cursor: pointer;
     display: inline-flex;
-    font-family: "JetBrains Mono", monospace;
+    /* font-family: "JetBrains Mono", monospace; */
     height: 50px;
     width: 90px;
     justify-content: center;
@@ -103,18 +103,18 @@
 }
 
 .button:focus {
-    box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
-        rgba(140, 136, 148, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+    box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 1px 3px,
+        rgba(140, 136, 148, 0.3) 0 0px 3px -3px, #d6d6e7 0 -3px 0 inset;
 }
 
 .button:hover {
-    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
-        rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 3px,
+        rgba(45, 35, 66, 0.3) 0 0px 3px -3px, #d6d6e7 0 -3px 0 inset;
     transform: translateY(-2px);
 }
 
 .button:active {
-    box-shadow: #d6d6e7 0 3px 7px inset;
+    box-shadow: #d6d6e7 0 1px 3px inset;
     transform: translateY(2px);
 }
 .text {

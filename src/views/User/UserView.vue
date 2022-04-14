@@ -78,7 +78,7 @@ button {
     /* background-image: linear-gradient(to top, rgb(200, 231, 250, 0.703), rgb(163, 212, 243)); */
     background-color: rgba(255, 255, 255, 0.701);
     /* border: 0px solid rgba(82, 71, 240, 0.3); */
-    border-bottom: none;
+    /* border-bottom: none; */
     height: 60px;
     max-width: 250px;
 }
@@ -86,19 +86,20 @@ button:hover {
   transform: scale(1.05);
   border-radius: 10px 10px 10px 10px !important;
 }
-button:first-of-type {
+/* button:first-of-type {
     border-right: none;
-}
+} */
 button.active {
     background-image:none;
-    border-bottom: none;
+    background-color: antiquewhite;
+    /* border-bottom: none; */
 }
 .panel {
     max-width: 500px;
     border-radius: 0px 0px 10px 10px;
     background-color: #ffffff;
     box-shadow: 0px 20px 20px #ffbb7280;
-    border: 1px solid #e3e3e3;;
+    /* border: 1px solid #e3e3e3;; */
     border-top: none;
 }
 </style>

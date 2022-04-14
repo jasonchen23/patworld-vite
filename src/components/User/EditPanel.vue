@@ -1,5 +1,6 @@
 <template>
-<div class="container px-4">
+<div class=" px-4 pt-3">
+<h3>會員資料管理</h3>
 <Form class="d-grid p-4 text-end" @submit="onSubmit">
     <Field name="account" type="text" :rules="isRequired" class="form-control" placeholder="帳號" v-model="account" disabled="disabled" />
     <ErrorMessage name="account" class="text-danger" />
@@ -39,7 +40,7 @@
         >網站服務條款及隱私設定</a
       >
     </div> -->
-    <button class="btn btn-primary mt-3" type="submit">
+    <button class="btn btn-warning m-3 mx-auto" type="submit">
         修改帳戶資料
     </button>
 </Form>
@@ -119,12 +120,15 @@ export default {
 </script>
 
 <style scoped>
-a {
-    text-decoration: none;
-}
 
 button {
     font-weight: bold;
-    background-image: linear-gradient(to right, rgb(1 134 218), rgb(182 49 167));
+    /* background-image: linear-gradient(to right, rgb(1 134 218), rgb(182 49 167)); */
+}
+
+span, button , a{
+  color: #802300;
+  font-family: jf-openhuninn;
+  text-decoration: none;
 }
 </style>

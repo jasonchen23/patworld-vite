@@ -111,5 +111,11 @@ methods:{
   display: flex;
 }
 
+h2,span, button , a{
+  color: #802300;
+  font-family: jf-openhuninn;
+  text-decoration:none;
+}
+
 
 </style>

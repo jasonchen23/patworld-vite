@@ -15,9 +15,10 @@ export default {
     background-color: #FCFCFD;
     border-radius: 4px;
     border-width: 0;
-    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+    box-shadow: #ffc107ff 0 1px 3px,#ffc107ff  0 0px 3px -3px,#D6D6E7 0 -3px 0 inset;
     box-sizing: border-box;
-    color: #36395A;
+    color: #802300;
+    font-family: jf-openhuninn;
     cursor: pointer;
     display: inline-flex;
     font-family: "JetBrains Mono",monospace;
@@ -41,11 +42,11 @@ export default {
     }
 
     .button-30:focus {
-      box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+      box-shadow: #D6D6E7 0 0 0 1.5px inset, #ffc107ff 0 2px 4px, #ffc107ff 0 3px 3px -3px, #D6D6E7 0 -3px 0 inset;
     }
 
     .button-30:hover {
-      box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+      box-shadow: #ffc107ff 0 2px 3px, #ffc107ff 0 0px 3px -3px, #D6D6E7 0 -3px 0 inset;
       transform: translateY(-2px);
     }
 

@@ -1,6 +1,6 @@
 <template>
   <Navbar />
-  <div class="container">
+  <div class="container pb-5">
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -34,8 +34,8 @@
     </div>
 </div>
 
-<router-link to="/donate/list">
-  <button class="button-30" role="button">我要捐飼料</button>
+<router-link to="/donate/list" >
+  <button class="button-30 fw-bold" role="button">我要捐飼料</button>
 </router-link>
 
 <router-view></router-view>
@@ -61,11 +61,15 @@ export default {
 
 body{
       margin-top:50px;
-      background: rgba(255, 250, 244, 1) 
+      background: #fffaf4;
     }
 
     .carousel .carousel-item {
       height: 500px;
+    }
+
+    a{
+      text-decoration: none;
     }
 
     /* .carousel .carousel-item img {

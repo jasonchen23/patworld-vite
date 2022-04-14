@@ -83,10 +83,10 @@ h1 img {
     background-color: #fcfcfd;
     border-radius: 4px;
     border-width: 0;
-    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
-        rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 3px,
+        rgba(45, 35, 66, 0.3) 0 0px 3px -3px, #d6d6e7 0 -3px 0 inset;
     box-sizing: border-box;
-    color: #36395a;
+    color: #802300ff;
     cursor: pointer;
     display: inline-flex;
     font-family: "JetBrains Mono", monospace;
@@ -112,13 +112,13 @@ h1 img {
 }
 
 .sentButton:focus {
-    box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
-        rgba(140, 136, 148, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+    box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 3px,
+        rgba(140, 136, 148, 0.3) 0 2px 3px -3px, #d6d6e7 0 -3px 0 inset;
 }
 
 .sentButton:hover {
-    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
-        rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 1px 3px,
+        rgba(45, 35, 66, 0.3) 0 2px 3px -3px, #d6d6e7 0 -3px 0 inset;
     transform: translateY(-2px);
 }
 

@@ -1,6 +1,6 @@
 <template>
   <div class="pt-4 text-center">
-   <span> 捐贈紀錄 </span>
+   <h3> 捐贈紀錄 </h3>
   </div>
     <hr>
     <div class="container box">
@@ -59,16 +59,18 @@ export default {
 </script>
 
 <style scoped>
-a {
+
+span, button , a{
+  color: #802300;
+  font-family: jf-openhuninn;
   text-decoration: none;
 }
-
 button {
   font-weight: bold;
-  background-image: linear-gradient(to right, rgb(1 134 218), rgb(182 49 167));
+  /* background-image: linear-gradient(to right, rgb(1 134 218), rgb(182 49 167)); */
 }
-.box{
+/* .box{
   width: 200px;
-}
+} */
 
 </style>

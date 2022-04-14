@@ -135,8 +135,10 @@ export default {
 </script>
 
 <style scoped>
-a {
-    text-decoration: none;
+span, button , a{
+  color: #802300;
+  font-family: jf-openhuninn;
+  text-decoration: none;
 }
 
 button {

@@ -233,7 +233,7 @@ export default {
 }
 .slideshow {
     border-radius: 10px 10px 10px 10px / 10px 10px 10px 10px;
-    box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 2px 1px #ffc107ff;
     margin-top: 15vh;
 }
 .search {
@@ -256,7 +256,7 @@ select {
     /* Personalize */
     flex: 1;
     padding: 0 1em;
-    color: rgba(2, 107, 72, 0.425);
+    color: #802300ff;
     background-color: var(--darkgray);
     background-image: none;
     cursor: pointer;
@@ -284,13 +284,13 @@ select::-ms-expand {
     top: 0;
     right: 0;
     padding: 1em;
-    background-color: #4a6886;
+    background-color: #ffc107ff;
     transition: 0.25s all ease;
     pointer-events: none;
 }
 /* Transition */
 .select:hover::after {
-    color: #0f0;
+    color: #802300ff;
 }
 .selectBox {
     display: flex;
@@ -305,10 +305,10 @@ select::-ms-expand {
     background-color: #fcfcfd;
     border-radius: 4px;
     border-width: 0;
-    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
-        rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+    box-shadow: #fbebbd 0 0px 2px,
+        #f9df8f 0 0px 3px 1px, #d6d6e7 0 -3px 0 inset;
     box-sizing: border-box;
-    color: #36395a;
+    color: #802300ff;
     cursor: pointer;
     display: inline-flex;
     font-family: "JetBrains Mono", monospace;
@@ -335,13 +335,13 @@ select::-ms-expand {
 }
 
 .button:focus {
-    box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
-        rgba(140, 136, 148, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+    box-shadow: #d6d6e7 0 0 0 1.5px inset, #c83d3d66 0 0px 2px,
+        #c83d3d66 0 0px 3px -3px, #d6d6e7 0 -3px 0 inset;
 }
 
 .button:hover {
-    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
-        rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+    box-shadow: #c83d3d66 0 2px 3px,
+        #c83d3d66 0 0px 3px -3px, #d6d6e7 0 -3px 0 inset;
     transform: translateY(-2px);
 }
 

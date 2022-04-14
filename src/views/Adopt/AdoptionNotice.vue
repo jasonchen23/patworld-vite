@@ -1,6 +1,7 @@
 <template>
+    <Navbar />
     <div class="body container">
-        <Navbar />
+
         <div class="titleBox">
             <h1>
                 <img src="./vuesImages/肉球.svg" />
@@ -308,7 +309,7 @@ ul li {
     box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
         rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
     box-sizing: border-box;
-    color: #36395a;
+    color: #802300ff;
     cursor: pointer;
     display: inline-flex;
     font-family: "JetBrains Mono", monospace;

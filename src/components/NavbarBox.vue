@@ -24,13 +24,12 @@
                     <router-link to="/develop" class="text-reset fw-bold"><a>DEVELOP</a></router-link>
                 </li>
             </ul>
-    </div>
-    <div>
-        <li>
-            <router-link to="/member" class="text-reset fw-bold">
-                <img src="../assets/icon/user.svg" alt="">
-            </router-link>
-        </li>
+
+            <div>
+                <router-link to="/member">
+                    <img src="../assets/icon/user.svg" style="width: 30px; height: 24px;"/>
+                </router-link>
+            </div>
     </div>
   </div>
 </nav>

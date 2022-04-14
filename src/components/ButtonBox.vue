@@ -20,9 +20,9 @@ props:{
     background-color: #FCFCFD;
     border-radius: 4px;
     border-width: 0;
-    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 1px 3px,rgba(45, 35, 66, 0.3) 0 0px 3px -3px,#D6D6E7 0 -3px 0 inset;
     box-sizing: border-box;
-    color: #36395A;
+    color: #802300ff;
     cursor: pointer;
     display: inline-flex;
     font-family: "JetBrains Mono",monospace;
@@ -46,16 +46,16 @@ props:{
     }
 
     .button-30:focus {
-      box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+      box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 1px 3px, rgba(45, 35, 66, 0.3) 0 0px 3px -3px, #D6D6E7 0 -3px 0 inset;
     }
 
     .button-30:hover {
-      box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+      box-shadow: rgba(45, 35, 66, 0.4) 0 1px 3px, rgba(45, 35, 66, 0.3) 0 0px 3px -3px, #D6D6E7 0 -3px 0 inset;
       transform: translateY(-2px);
     }
 
     .button-30:active {
-      box-shadow: #D6D6E7 0 3px 7px inset;
+      box-shadow: #D6D6E7 0 1px 3px inset;
       transform: translateY(2px);
     }
 </style>

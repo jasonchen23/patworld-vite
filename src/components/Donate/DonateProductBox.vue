@@ -1,11 +1,12 @@
 <template>
-  <div class="card ms-4">
+  <div class="card ms-4 p-3">
     <img :src="imageSrc">
     <h4><strong>{{title}}</strong></h4>
     <p>NT$ {{price}}</p>
     <a class="button-21" @click="addCartItem()">
       <strong>加入購物車</strong>
     </a>
+    <br />
   </div>
 </template>
 
@@ -42,8 +43,8 @@ h4{
 .button-21 {
   align-items: center;
   appearance: none;
-  background-color: #f7d6b7;
-  background-image: linear-gradient(1deg, #f4c8bc, #f4b79d 99%);
+  background-color: #ffc107ff;
+  background-image: linear-gradient(1deg, #ffc107ff, #ffc107ff 99%);
   background-size: calc(100% + 20px) calc(100% + 20px);
   border-radius: 100px;
   border-width: 0;
@@ -52,7 +53,6 @@ h4{
   color: #FFFFFF;
   cursor: pointer;
   display: inline-flex;
-  font-family: CircularStd,sans-serif;
   font-size: 1rem;
   height: auto;
   justify-content: center;
@@ -75,10 +75,11 @@ h4{
 }
 
 .button-21:hover {
+  color:#FFFFFF;
   background-position: -20px -20px;
 }
 
 .button-21:focus:not(:active) {
-  box-shadow: rgba(199, 90, 230, 0.25) 0 0 0 .125em;
+  box-shadow: #a24e00 0 0 0 .125em;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
 
-    <div class="container">
+    <div class="container d-flex justify-content-center">
           <div class="card">
             <div class="cat"> 
               <img src="src\views\Donate\DonateImages\ojigi_animal_neko.png" width="200" height="200" class="img-fluid">
@@ -32,5 +32,12 @@ export default {
         margin-top: 50px;
     }
     
+h2,span, button , a{
+  color: #802300;
+  font-family: jf-openhuninn;
+  text-decoration:none;
+}
+
+
 
 </style>

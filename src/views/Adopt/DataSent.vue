@@ -1,6 +1,7 @@
 <template>
+<Navbar />
     <div class="container">
-        <Navbar />
+        
         <div class="imgBox">
             <img src="./vuesImages/congratulation.svg" alt />
         </div>
