@@ -22,11 +22,11 @@ export default {
 <style scoped>
 button {
     font-weight: bold;
-    background: #3b5998;
+    background: #ffa85c;
 }
 
 button:hover {
-    background: #4d6fb9;
+    background: #fb9445;
 }
 
 button svg {

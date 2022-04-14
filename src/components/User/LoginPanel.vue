@@ -24,7 +24,7 @@
       @keydown="cleanError"
     />
     <ErrorMessage name="password" class="text-danger" />
-    <button class="btn btn-primary mt-3" type="submit">登入</button>
+    <button class="btn btn-warning mt-3" type="submit">登入</button>
   </Form>
   <div class="text-danger text-center">{{ loginError }}</div>
   <div class="pb-4 text-center">
@@ -85,6 +85,6 @@ a {
 
 button {
   font-weight: bold;
-  background-image: linear-gradient(to right, rgb(1 134 218), rgb(182 49 167));
+  /* background-image: linear-gradient(to right, rgb(1 134 218), rgb(182 49 167)); */
 }
 </style>

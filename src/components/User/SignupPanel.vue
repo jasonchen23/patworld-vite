@@ -41,7 +41,7 @@
         >網站服務條款及隱私設定</a
       >
     </div>
-    <button class="btn btn-primary mt-3" type="submit" :disabled="isDisabled">
+    <button class="btn btn-warning mt-3" type="submit" :disabled="isDisabled">
         立即加入
     </button>
 </Form>
@@ -141,6 +141,6 @@ a {
 
 button {
     font-weight: bold;
-    background-image: linear-gradient(to right, rgb(1 134 218), rgb(182 49 167));
+    /* background-image: linear-gradient(to right, rgb(1 134 218), rgb(182 49 167)); */
 }
 </style>

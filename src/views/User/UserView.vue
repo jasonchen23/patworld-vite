@@ -14,7 +14,7 @@
             </button>
         </div>
         <div class="row pb-5 pt-5">
-            <div class="col-12 m-auto panel" style="border-radius:10px;">
+            <div class="col-12 mx-auto panel" style="border-radius:10px;">
                 <component :is="currentPanel" />
             </div>
         </div>
@@ -61,18 +61,23 @@ export default {
 </script>
 
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@300&display=swap');
-span{
-  font-family: 'Red Hat Mono', monospace;
+/* @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@300&display=swap'); */
+
+span, button , a{
+  color: #802300;
+  font-family: jf-openhuninn;
 }
 .background {
     height: 100vh;
-    background-image: linear-gradient(to right, rgb(1 134 218), rgb(182 49 167));
+    background-image: url('src/views/User/img/22643016.jpg');
+    background-repeat: repeat-x;
+    background-size: cover;
+    background-position: center;
 }
 button {
-      background-image: linear-gradient(to top, rgb(200, 231, 250, 0.703), rgb(163, 212, 243));
+    /* background-image: linear-gradient(to top, rgb(200, 231, 250, 0.703), rgb(163, 212, 243)); */
     background-color: rgba(255, 255, 255, 0.701);
-    border: 0px solid rgba(82, 71, 240, 0.3);
+    /* border: 0px solid rgba(82, 71, 240, 0.3); */
     border-bottom: none;
     height: 60px;
     max-width: 250px;
@@ -89,11 +94,11 @@ button.active {
     border-bottom: none;
 }
 .panel {
-    /* max-width: 500px; */
+    max-width: 500px;
     border-radius: 0px 0px 10px 10px;
-    background-color: rgba(255, 255, 255, 0.701);
-    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.5);
-    border: 1px solid rgba(128, 128, 128, 0.3);
+    background-color: #ffffff;
+    box-shadow: 0px 20px 20px #ffbb7280;
+    border: 1px solid #e3e3e3;;
     border-top: none;
 }
 </style>
